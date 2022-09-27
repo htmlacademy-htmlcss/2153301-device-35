@@ -47,16 +47,80 @@
         <h2 class="inner-header-title">Моноподы для селфи</h2>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><span>Главная</span></a>
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#"><span>Каталог товаров</span></a>
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#"><span>Моноподы для селфи</span></a>
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
       </header>
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цвет</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                <input type="checkbox" class="control-input" name="Черный" checked>
+
+                Черный
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                <input type="checkbox" class="control-input" name="Белый" checked>
+
+                Белый
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                <input type="checkbox" class="control-input" name="Синий">
+
+                Синий
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                <input type="checkbox" class="control-input" name="Красный">
+
+                Красный
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                <input type="checkbox" class="control-input" name="Розовый">
+
+                Розовый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" class="control-input" name="Bluetooth" value="yes" checked>
+                  Есть
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input type="radio" class="control-input" name="Bluetooth" value="no" >
+                  Нет
+                 </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>

@@ -58,7 +58,7 @@
         </ul>
       </header>
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h2 class="filter-title">фильтр:</h2>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
@@ -120,6 +120,30 @@
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
+        <label class="select-control">
+          <h2 class="filter-title">сортировка:</h2>
+          <select class="select-control">
+            <option value="popular">Дорогие</option>
+            <option value="cheap">Дешёвые</option>
+            <option value="expensive" selected>Популярные</option>
+          </select>
+        </label>
+        <button class="top" type="button">
+          <span class="visually-hidden">прокрутка вверх</span>
+        </button>
+        <button class="bottom" type="button">
+          <span class="visually-hidden">Прокрутка вниз</span>
+        </button>
+        <ul class="product-list">
+          <li class="product-card">
+            <a href="#" class="product-card-link">
+              <img class="product-card-image" src="" alt="Любительская
+              селфи-палка">
+              <h2 class="product-card-title">Любительская
+                селфи-палка<h2>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
   </body>

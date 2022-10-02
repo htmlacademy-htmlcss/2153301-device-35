@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
-      <a><img src="images/device-logo.svg" width="145" height="36" alt="логотип девайс"></a>
+      <a href=""><img src="images/device-logo.svg" width="145" height="36" alt="логотип девайс"></a>
       <form class="search" action="https://echo.htmlacademy.ru/" method="post">
         <input type="text" class="search-input" name="search-input" id="search-input" value="Поиск по сайту">
         <button type="button" class="search-button">Найти</button>
@@ -73,7 +74,7 @@
           </li>
           <li>
             <section class="description-product">
-              <img class="slider-image" src="images/slider-fitness bracelet.png" alt="фитнес браслет">
+              <img class="slider-image" src="images/slider-fitness-bracelet.png" alt="фитнес браслет">
               <h2 class="visually-hidden">Описание товара</h2>
               <span class="number-product">02</span>
               <p class="advantages-description">Худеем правильно!</p>
@@ -89,7 +90,7 @@
           </li>
           <li>
             <section class="description-product">
-              <img class="slider-image" src="images/slider-selfie stick.png" alt="селфи палки">
+              <img class="slider-image" src="images/slider-selfie-stick.png" alt="селфи палки">
               <h2 class="visually-hidden">Описание товара</h2>
               <span class="number-product">03</span>
               <p class="advantages-description">Делай селфи, как Бен Стиллер! </p>
@@ -162,35 +163,30 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-list-item">
-            <button class="button-services" type="button">
-              <span class="services-list-item-caption services-list-item-caption-current">Доставка</span>
-            </button>
-            <h3 class="services-title">Доставка</h3>
-            <p class="services-content">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
+            <button class="button-services" type="button">Доставка</button>
           </li>
           <li class="services-list-item">
-            <button class="button-services" type="button">
-              <span class="services-list-item-caption">Гарантия</span>
-            </button>
-            <h3 class="services-title">Гарантия</h3>
-            <p class="services-content">Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
+            <button class="button-services" type="button">Гарантия</button>
           </li>
           <li class="services-list-item">
-            <button class="button-services" type="button">
-              <span class="services-list-item-caption">Кредит</span>
-            </button>
-            <h3 class="services-title">Кредит</h3>
-            <p class="services-content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
-
-            </p>
+            <button class="button-services" type="button">Кредит</button>
           </li>
         </ul>
+        <dl>
+          <dt class="services-title">Доставка</dt>
+            <dd class="services-content">Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно! Ведь
+              мы неплохо заработаем, поднимая его на ваш этаж.
+            </dd>
+            <dt class="services-title">Гарантия</dt>
+            <dd class="services-content">Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </dd>
+            <dt class="services-title">Кредит</dt>
+            <dd class="services-content">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+            </dd>
+        </dl>
       </section>
       <a href="#">
         <span class="button-delivery-caption">Доставим редкий товар под заказ</span>

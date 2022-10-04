@@ -49,3 +49,147 @@ body {
   font-style: normal;
   color: #000000;
 }
+
+.catalog-link {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  font-display:  swap;
+}
+
+.menu-item {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  font-display:  swap;
+}
+
+.number-product {
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 180px;
+line-height: 30px;
+color: #FFFFFF;
+background-color: #FFE17F;
+}
+
+.advantages-description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  font-display:  swap;
+}
+
+.detail-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.detail-definition {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.detail-term {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.list-product-item {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.list-product-item-link {
+  color: #000000;
+}
+
+.services {
+  background-color: #F0F0F0;
+}
+
+.button-services {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-services .current {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.services-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.services-content {
+  color: #444444;
+}
+
+.delivery-link {
+  background-color: #F0F0F0;
+}
+
+
+.button-delivery-caption {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.about-us-contact-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.delivery-company-item {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.more-about-us {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+}

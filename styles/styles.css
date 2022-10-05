@@ -33,6 +33,7 @@ body {
 }
 
 .page-header {
+  color: #000000;
   background-color: #FFE17F;
 }
 
@@ -47,6 +48,7 @@ body {
 .navigation-link {
   font-family: "Rubik", sans-serif;
   font-style: normal;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -56,29 +58,34 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
   font-display:  swap;
+
 }
 
-.menu-item {
+.menu-item-link {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-decoration: none;
   font-display:  swap;
 }
 
 .number-product {
   font-family: 'Rubik';
-font-style: normal;
-font-weight: 700;
-font-size: 180px;
-line-height: 30px;
-color: #FFFFFF;
-background-color: #FFE17F;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background-color: #FFE17F;
 }
 
-.advantages-description {
+.advantages-description-title {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -87,33 +94,32 @@ background-color: #FFE17F;
   font-display:  swap;
 }
 
+.advantages-description {
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
 .detail-title {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
 }
 
 .detail-definition {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
   font-size: 36px;
   line-height: 30px;
 }
 
 .detail-term {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  color: #444444;
+  background-color: #FFFFFF;
 }
 
 .list-product-item {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -129,7 +135,6 @@ background-color: #FFE17F;
 
 .button-services {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -137,7 +142,6 @@ background-color: #FFE17F;
 
 .button-services .current {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -147,7 +151,6 @@ background-color: #FFE17F;
 
 .services-title {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -159,12 +162,12 @@ background-color: #FFE17F;
 
 .delivery-link {
   background-color: #F0F0F0;
+  color: #000000;
 }
 
 
 .button-delivery-caption {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
@@ -172,24 +175,59 @@ background-color: #FFE17F;
 
 .about-us-contact-title {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
 
 .delivery-company-item {
-  font-family: 'Rubik';
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
 
+.about-us-content {
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
 .more-about-us {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contacts-address-tel {
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+.newsletter {
+  color: #444444;
+  background-color: #F0F0F0;
+}
+
+.newsletter-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.newsletter-button-caption {
+  font-family: 'Raleway';
+  ont-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #F0F0F0;
 }

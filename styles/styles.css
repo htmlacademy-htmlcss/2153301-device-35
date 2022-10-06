@@ -277,3 +277,115 @@ body {
 .contacts-phone-footer{
   color: #FFFFFF;
 }
+
+.inner-header-title {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs-link {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.filter-block {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.filter-title {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.control {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-control {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.sort-header {
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.filter-title {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.product-card-title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product-card-price {
+  color: #444444;
+  background-color: #FFFFFF;
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-pagination-show-more {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.pagination-block {
+  background-color: #EBEBEB;
+  color: #444444;
+}
+
+.pagination-link {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  background-color: inherit;
+  text-decoration: none;
+}

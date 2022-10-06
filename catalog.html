@@ -14,20 +14,19 @@
         <button type="button" class="search-button">Найти</button>
         <span class="visually-hidden">Поиск по сайту</span>
       </form>
-      <div class="header-login">
-        <span class="user-name">Коля Петухов</span>
-        <a href="#"><span>Выйти</span></a>
-        <span class="visually-hidden">Выход из аккаунта</span>
-      </div>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#" >
-            <span>Сравнить</span></a>
+            <span class="navigation-link">Коля Петухов</span>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#" >
-            <span>Корзина</span></a>
+            <a class="navigation-link" href="#"><span>Выйти</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span>Сравнить</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span>Корзина</span></a>
           </li>
         </ul>
       </nav>
@@ -37,9 +36,9 @@
       <section class="menu">
         <h2 class="visually-hidden">Меню</h2>
         <ul class="menu-list">
-          <li class="menu-item"><a href=""><h2 class="menu-title">Доставка</h2></a></li>
-          <li class="menu-item"><a href=""><h2 class="menu-title">Гарантия</h2></a></li>
-          <li class="menu-item"><a href=""><h2 class="menu-title">Контакты</h2></a></li>
+          <li class="menu-item"><a class="menu-item-link" href=""><h2 class="menu-title">Доставка</h2></a></li>
+          <li class="menu-item"><a class="menu-item-link" href=""><h2 class="menu-title">Гарантия</h2></a></li>
+          <li class="menu-item"><a class="menu-item-link" href=""><h2 class="menu-title">Контакты</h2></a></li>
         </ul>
       </section>
     </header>
@@ -58,7 +57,7 @@
           </li>
         </ul>
       </header>
-      <section class="catalog-products">
+      <section class="filter-block">
         <h2 class="filter-title">фильтр:</h2>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -113,8 +112,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button-control" type="submit">Показать</button>
         </form>
+      </section>
+      <section class="sort-header">
         <h3 class="filter-title">сортировка:</h3>
         <label class="select-control">
           <select class="select-control">
@@ -131,6 +132,8 @@
           <span class="visually-hidden">Прокрутка вниз</span>
           <img src="images/button-bottom.svg" width="11" height="10" alt="прокрутка товаров вниз">
         </button>
+      </section>
+      <section class="product-pagination">
         <ul class="product-list">
           <li class="product-card">
             <img class="product-card-image" src="images/amateur-selfie-stick.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -161,31 +164,35 @@
             <a href="#" class="product-card-link visually-hidden">Подробнее</a>
           </li>
         </ul>
+        <button class="button-pagination-show-more" type="button">Загрузить ещё</button>
+        <div class="pagination-block">
+          <ol class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-link-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <span>...</span>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">15</a>
+            </li>
+          </ol>
+          <ol class="pagination-control">
+            <li class="pagination-control-item">
+              <a class="pagination-control-link">Назад</a>
+            </li>
+            <li class="pagination-control-item">
+              <a class="pagination-control-link" href="#">Вперёд</a>
+            </li>
+          </ol>
+        </div>
       </section>
-      <button class="button-pagination-show-more" type="button">Загрузить ещё</button>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link">Назад</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <span>...</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">15</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">Вперёд</a>
-        </li>
-      </ul>
     </main>
     <footer class="page-footer">
       <img src="images/device-logo-footer.svg" width="145" height="36" alt="логотип Девайс">

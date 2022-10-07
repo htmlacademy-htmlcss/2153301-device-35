@@ -172,6 +172,21 @@ button.button-services-current {
   color: #444444;
 }
 
+.services-content-delivery {
+  background-image: url("../images/deliveryman.svg");
+  background-repeat: no-repeat;
+}
+
+.services-content-guarantee {
+  background-image: url("../images/guarantee.svg");
+  background-repeat: no-repeat;
+}
+
+.services-content-credit {
+  background-image: url("../images/credit.svg");
+  background-repeat: no-repeat;
+}
+
 .delivery-link {
   background-color: #F0F0F0;
   color: #000000;
@@ -298,6 +313,10 @@ button.button-services-current {
   line-height: 21px;
   text-transform: uppercase;
   color:#FFFFFF;
+
+}
+
+.services-page-footer-item-link {
   text-decoration: none;
 }
 

@@ -45,6 +45,14 @@ body {
   line-height: 20px;
 }
 
+.search-button {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .navigation-link {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -52,18 +60,10 @@ body {
   color: #000000;
 }
 
-.catalog-link {
-  font-family: "Raleway",sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-  font-display:  swap;
-
+.exit {
+  opacity: 0.3;
 }
+
 
 .menu-item-link {
   font-family: "Raleway",sans-serif;
@@ -75,7 +75,11 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFE17F;
-  font-display:  swap;
+}
+
+.menu-title {
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .number-product {
@@ -94,7 +98,6 @@ body {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  font-display:  swap;
 }
 
 .advantages-description {
@@ -107,6 +110,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .detail-definition {
@@ -143,19 +147,22 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-transform: uppercase;
 }
 
-.button-services .current {
+button.button-services-current {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-transform: uppercase;
   color: #FFE17F;
   background-color: #000000;
 }
 
 .services-title {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -168,33 +175,42 @@ body {
 .delivery-link {
   background-color: #F0F0F0;
   color: #000000;
-}
-
-
-.button-delivery-caption {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
   text-decoration: none;
+  text-transform: uppercase;
 }
+
 
 .about-us-contact-title {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
 
+.about-us-content {
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
 .delivery-company-item {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
 
-.about-us-content {
-  color: #444444;
-  background-color: #FFFFFF;
+.more-about-us {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .contacts-address {
@@ -206,30 +222,20 @@ body {
   color:#444444;
 }
 
-.more-about-us {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-}
-
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
 }
 
-.contacts-address-tel {
+.contacts-address-tel-time {
   color: #444444;
   background-color: #FFFFFF;
 }
 
-.newsletter {
-  color: #444444;
-  background-color: #FFFFFF;
-}
 
 .newsletter-block {
   background-color: #F0F0F0;
+  color:#000000;
 
 }
 
@@ -240,6 +246,22 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  background-color: inherit;
+}
+
+.newsletter-title-content {
+  color: #444444;
+  background-color: inherit;
+}
+
+.field {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #FFFFFF;
 }
 
 .newsletter-button-caption {
@@ -250,6 +272,12 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #F0F0F0;
+  text-transform: uppercase;
+}
+
+.newsletter-free {
+  color: #444444;
+  background-color: #FFFFFF;
 }
 
 .page-footer {
@@ -346,6 +374,16 @@ body {
   text-transform: uppercase;
 }
 
+.select-control {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
 .product-card-title {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -387,4 +425,21 @@ body {
   color: #444444;
   background-color: inherit;
   text-decoration: none;
+  opacity: 0.3;
+}
+
+.pagination-link-current {
+  opacity: 0.6;
+}
+
+a.pagination-link-prev-next {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #EBEBEB;
+  text-transform: uppercase;
+  opacity: 1;
 }

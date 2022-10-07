@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Интернет-магазин "Девайс" Каталог</h1>
+      <h2 class="visually-hidden">Интернет-магазин "Девайс" Каталог</h2>
       <a href="index.html"><img src="images/device-logo.svg" width="145" height="36" alt="логотип девайс"></a>
       <form class="search" action="https://echo.htmlacademy.ru/" method="post">
         <input type="text" class="search-input" name="search-input" id="search-input" value="Поиск по сайту">
@@ -20,7 +20,7 @@
             <span class="navigation-link">Коля Петухов</span>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span>Выйти</span></a>
+            <a class="navigation-link" href="#"><span class="exit">Выйти</span></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#"><span>Сравнить</span></a>
@@ -30,21 +30,26 @@
           </li>
         </ul>
       </nav>
-      <a href="catalog.html" class="catalog-link catalog-link-current">
-        <h2>Каталог товаров</h2>
-      </a>
       <section class="menu">
-        <h2 class="visually-hidden">Меню</h2>
         <ul class="menu-list">
-          <li class="menu-item"><a class="menu-item-link" href=""><h2 class="menu-title">Доставка</h2></a></li>
-          <li class="menu-item"><a class="menu-item-link" href=""><h2 class="menu-title">Гарантия</h2></a></li>
-          <li class="menu-item"><a class="menu-item-link" href=""><h2 class="menu-title">Контакты</h2></a></li>
+          <li>
+            <a class="menu-item-link" href="#"><h2 class="menu-title">Каталог товаров</h2></a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#"><h2 class="menu-title">Доставка</h2></a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#"><h2 class="menu-title">Гарантия</h2></a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="#"><h2 class="menu-title">Контакты</h2></a>
+          </li>
         </ul>
       </section>
     </header>
     <main class="main-inner">
       <header class="inner-header">
-        <h2 class="inner-header-title">Моноподы для селфи</h2>
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -117,7 +122,7 @@
       </section>
       <section class="sort-header">
         <h3 class="filter-title">сортировка:</h3>
-        <label class="select-control">
+        <label class="select-control-title">
           <select class="select-control">
             <option value="popular">Дорогие</option>
             <option value="cheap">Дешёвые</option>
@@ -167,6 +172,9 @@
         <button class="button-pagination-show-more" type="button">Загрузить ещё</button>
         <div class="pagination-block">
           <ol class="pagination">
+             <li class="pagination-item">
+              <a class="pagination-link pagination-link-prev-next">Назад</a>
+            </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-link-current">1</a>
             </li>
@@ -177,18 +185,13 @@
               <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <span>...</span>
+              <span class="pagination-link">...</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">15</a>
             </li>
-          </ol>
-          <ol class="pagination-control">
-            <li class="pagination-control-item">
-              <a class="pagination-control-link">Назад</a>
-            </li>
-            <li class="pagination-control-item">
-              <a class="pagination-control-link" href="#">Вперёд</a>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-link-prev-next" href="#">Вперёд</a>
             </li>
           </ol>
         </div>

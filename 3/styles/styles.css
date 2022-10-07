@@ -1,0 +1,445 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.search {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.search-button {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation-link {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+}
+
+.exit {
+  opacity: 0.3;
+}
+
+
+.menu-item-link {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.menu-title {
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.number-product {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background-color: #FFE17F;
+}
+
+.advantages-description-title {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.advantages-description {
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+.detail-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.detail-definition {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.detail-term {
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+.list-product-item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.list-product-item-link {
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.services {
+  background-color: #F0F0F0;
+}
+
+.button-services {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+button.button-services-current {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFE17F;
+  background-color: #000000;
+}
+
+.services-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.services-content {
+  color: #444444;
+}
+
+.delivery-link {
+  background-color: #F0F0F0;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.about-us-contact-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about-us-content {
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+.delivery-company-item {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.more-about-us {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.contacts-address {
+  color: #444444;
+  font-style: normal;
+}
+
+.contacts-phone {
+  color:#444444;
+}
+
+.contacts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contacts-address-tel-time {
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+
+.newsletter-block {
+  background-color: #F0F0F0;
+  color:#000000;
+
+}
+
+.newsletter-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  background-color: inherit;
+}
+
+.newsletter-title-content {
+  color: #444444;
+  background-color: inherit;
+}
+
+.field {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+.newsletter-button-caption {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #F0F0F0;
+  text-transform: uppercase;
+}
+
+.newsletter-free {
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+.page-footer {
+  background-color: #444444;
+  color: #FFFFFF;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.services-page-footer-item-title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+.contacts-phone-footer{
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.breadcrumbs-link {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.filter-block {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.filter-title {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.control {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-control {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.sort-header {
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.filter-title {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.product-card-title {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.product-card-price {
+  color: #444444;
+  background-color: #FFFFFF;
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-pagination-show-more {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.pagination-block {
+  background-color: #EBEBEB;
+  color: #444444;
+}
+
+.pagination-link {
+  font-family: "Rubik",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  background-color: inherit;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.pagination-link-current {
+  opacity: 0.6;
+}
+
+a.pagination-link-prev-next {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #EBEBEB;
+  text-transform: uppercase;
+  opacity: 1;
+}

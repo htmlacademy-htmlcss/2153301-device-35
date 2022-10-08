@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -35,6 +39,11 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFE17F;
+}
+
+.header-container {
+  width: 1160px;
+  height: 300px;
 }
 
 .search {
@@ -175,16 +184,19 @@ button.button-services-current {
 .services-content-delivery {
   background-image: url("../images/deliveryman.svg");
   background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .services-content-guarantee {
   background-image: url("../images/guarantee.svg");
   background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .services-content-credit {
   background-image: url("../images/credit.svg");
   background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 
 .delivery-link {

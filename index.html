@@ -7,7 +7,6 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-container">
         <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
         <a class="device-logo" href="#"><img src="images/device-logo.svg" width="145" height="36" alt="логотип девайс"></a>
         <div class="navigation-container">
@@ -18,10 +17,11 @@
           </form>
           <nav class="navigation">
             <ul class="navigation-list">
-              <li class="navigation-item">
+              <li class="navigation-item navigation-item-exit">
                 <a class="navigation-link" href="#"><span>Войти</span></a>
               </li>
-              <li class="navigation-item">
+              <li class="navigation-item"></li>
+              <li class="navigation-item navigation-item-compare">
                 <a class="navigation-link" href="#" ><span>Сравнить</span></a>
               </li>
               <li class="navigation-item">
@@ -35,10 +35,10 @@
             <li class="menu-item menu-item-catalog">
               <a class="menu-item-link" href="#"><h2 class="menu-title">Каталог товаров</h2></a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item-delivery">
               <a class="menu-item-link" href="#"><h2 class="menu-title">Доставка</h2></a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item-garanty">
               <a class="menu-item-link" href="#"><h2 class="menu-title">Гарантия</h2></a>
             </li>
             <li class="menu-item">
@@ -46,7 +46,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </header>
     <main class="main-index">
       <section class="slider">
@@ -253,45 +252,47 @@
       </footer>
     </main>
     <footer class="page-footer">
-      <div><img src="images/device-logo-footer.svg" width="145" height="36" alt="логотип Девайс"></div>
-      <div class="footer-content">
-        <p class="footer-content-address">Санкт-Петербург, набережная
-        реки Карповки, 5, литера П.
-        </p>
-        <ul class="services-page-footer">
-          <li class="services-page-footer-item">
-            <a class="services-page-footer-item-link" href="#"><h2 class="services-page-footer-item-title">Доставка</h2></a>
+      <div class="page-footer-container">
+        <img class="device-logo-footer" src="images/device-logo-footer.svg" width="145" height="36" alt="логотип Девайс">
+        <div class="footer-content">
+          <p class="footer-content-address">Санкт-Петербург, набережная
+          реки Карповки, 5, литера П.
+          </p>
+          <ul class="services-page-footer">
+            <li class="services-page-footer-item">
+              <a class="services-page-footer-item-link" href="#"><h2 class="services-page-footer-item-title">Доставка</h2></a>
+            </li>
+            <li class="services-page-footer-item">
+              <a class="services-page-footer-item-link" href="#"><h2 class="services-page-footer-item-title">Гарантия</h2></a>
+            </li>
+            <li class="services-page-footer-item">
+              <a class="services-page-footer-item-link" href="#"><h2 class="services-page-footer-item-title">Контакты</h2></a>
+            </li>
+          </ul>
+          <a class="contacts-phone-footer" href="tel:+78121212">Тел.: +7 (812) 812-12-12</a>
+        </div>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button-footer" href="https://t.me/htmlacademy">
+              <img src="images/telegram.svg" height="14" width="12" alt="телеграмм">
+              <span class="visually-hidden">Телеграмм</span>
+            </a>
           </li>
-          <li class="services-page-footer-item">
-            <a class="services-page-footer-item-link" href="#"><h2 class="services-page-footer-item-title">Гарантия</h2></a>
+          <li class="footer-social-item">
+            <a class="button-footer" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <img src="images/youtube.svg" width="16" alt="youtube">
+              <span class="visually-hidden">"youtube</span>
+            </a>
           </li>
-          <li class="services-page-footer-item">
-            <a class="services-page-footer-item-link" href="#"><h2 class="services-page-footer-item-title">Контакты</h2></a>
+          <li class="footer-social-item">
+            <a class="button-footer" href="#">
+              <img src="images/twitter.svg" width="15" alt="твиттер">
+              <span class="visually-hidden">твиттер</span>
+            </a>
           </li>
         </ul>
-        <a class="contacts-phone-footer" href="tel:+78121212">Тел.: +7 (812) 812-12-12</a>
+        <a href="https://echo.htmlacademy.ru/"><img src="images/html-academy.svg" width="115" height="33" alt="html-academy"></a>
       </div>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button-footer" href="https://t.me/htmlacademy">
-            <img src="images/telegram.svg" height="14" width="12" alt="телеграмм">
-            <span class="visually-hidden">Телеграмм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button-footer" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img src="images/youtube.svg" width="16" alt="youtube">
-            <span class="visually-hidden">"youtube</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button-footer" href="#">
-            <img src="images/twitter.svg" width="15" alt="твиттер">
-            <span class="visually-hidden">твиттер</span>
-          </a>
-        </li>
-      </ul>
-      <a href="https://echo.htmlacademy.ru/"><img src="images/html-academy.svg" width="115" height="33" alt="html-academy"></a>
     </footer>
 
 

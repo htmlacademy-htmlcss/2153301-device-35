@@ -48,6 +48,14 @@ body {
   background-color: #FFE17F;
 }
 
+.page-header-catalog {
+  width: 1160px;
+  height: 186px;
+  margin: 40px auto 0 auto;
+  color: #000000;
+  background-color: #FFE17F;
+}
+
 .device-logo {
   position: relative ;
   left: 60px;
@@ -55,21 +63,23 @@ body {
 }
 
 .navigation-container {
-  display:flex;
   width: 1040px;
   margin: 0 auto;
 }
 
 .search {
   display: inline-block;
+  width: 517px;
   font-family: "Rubik",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin-right: 22px;
 }
 
 .search-button {
+  display: inline-block;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -77,8 +87,36 @@ body {
   line-height: 20px;
 }
 
+.navigation {
+  display: inline-block;
+  width: 496px;
+}
+
+.navigation-list {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list-catalog {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-item {
   display: inline-block;
+}
+
+.navigation-item-exit {
+  margin-right: auto;
+}
+
+.navigation-item-compare {
+  margin-right: 30px;
 }
 
 .navigation-link {
@@ -94,10 +132,12 @@ body {
 
 .menu {
   width: 1040px;
+  margin: 0 auto;
 }
 
 .menu-list {
   display: flex;
+  padding: 0;
 }
 
 .menu-item {
@@ -108,6 +148,11 @@ body {
   margin-right: auto;
 }
 
+.menu-item-delivery,
+.menu-item-garanty {
+  margin-right: 57px;
+}
+
 .menu-item-link {
   font-family: "Raleway",sans-serif;
   font-style: normal;
@@ -116,6 +161,7 @@ body {
   line-height: 21px;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
   color: #000000;
   background-color: #FFE17F;
 }
@@ -445,6 +491,7 @@ about-us {
 
 .page-footer {
   width: 1440px;
+  height: 321px;
   margin: 0 auto ;
   background-color: #444444;
   color: #FFFFFF;
@@ -455,15 +502,24 @@ about-us {
   line-height: 20px;
 }
 
+.page-footer-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.device-logo-footer {
+  margin-top: 62px;
+}
+
 .footer-content {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: 1159px;
 }
 
 .footer-content-address {
   width: 239px;
-  margin-right: auto;
 }
 
 .services-page-footer {
@@ -494,7 +550,7 @@ about-us {
 }
 
 .inner-header-container {
-  margin: 60px;
+  margin-left: 60px;
 }
 
 .inner-header-title {
@@ -503,10 +559,13 @@ about-us {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin-top: 35px;
 }
 
 .breadcrumbs {
   display: flex;
+  justify-content: space-between;
+  width: 429px;
   padding: 0;
 }
 
@@ -525,7 +584,9 @@ about-us {
   background-color: #FFFFFF;
 }
 
-.filter-product-pagination {
+.main-inner {
+  width: 1440px;
+  margin: 0 auto;
   background-color: #F0F0F0;
   color: #000000;
 }
@@ -536,8 +597,8 @@ about-us {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  background-color: #F0F0F0;
-  color: #000000;
+  background-color: inherit;
+  color: inherit;
 }
 
 .filter-title {
@@ -590,6 +651,11 @@ about-us {
   color: #000000;
 }
 
+.product-pagination {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
 .product-card-title {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -609,17 +675,29 @@ about-us {
 }
 
 .button-pagination-show-more {
+  width: 760px;
+  height: 55px;
   font-family: "Raleway",sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
+  color: #000000;
+  background-color: inherit;
 }
 
 .pagination-block {
+  width: 760px;
+  height: 71px;
+  margin: 0 auto;
   background-color: #EBEBEB;
   color: #444444;
+}
+
+.pagination {
+  display: flex;
+  margin: 25px;
 }
 
 .pagination-link {

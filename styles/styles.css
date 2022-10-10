@@ -584,11 +584,16 @@ about-us {
   background-color: #FFFFFF;
 }
 
-.main-inner {
+.inner-main {
+  display: flex;
   width: 1440px;
   margin: 0 auto;
   background-color: #F0F0F0;
   color: #000000;
+}
+
+.filter-sort-pagination-container {
+  width: 1160px;
 }
 
 .filter-block {

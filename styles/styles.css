@@ -688,16 +688,33 @@ about-us {
 }
 
 .pagination-block {
+  display: flex;
   width: 760px;
-  height: 71px;
+  height: 70px;
   margin: 0 auto;
   background-color: #EBEBEB;
   color: #444444;
 }
 
-.pagination {
+
+.pagination-list {
+  width: 100%;
   display: flex;
-  margin: 25px;
+  margin: 20px;
+  padding: 0;
+}
+
+.pagination-item {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.pagination-item-prev {
+  margin-right: auto;
+}
+
+.pagination-item-next {
+  margin-left: auto;
 }
 
 .pagination-link {
@@ -716,7 +733,19 @@ about-us {
   opacity: 0.6;
 }
 
-a.pagination-link-prev-next {
+a.pagination-link-prev {
+  font-family: "Raleway",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #EBEBEB;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+a.pagination-link-next {
   font-family: "Raleway",sans-serif;
   font-style: normal;
   font-weight: 800;

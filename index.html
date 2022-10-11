@@ -152,7 +152,7 @@
           </li>
           <li class="list-product-item">
             <a class="list-product-item-link" href="catalog.html"><img class="list-product-item-img"  src="images/index-catalog-images-1.svg" width="160" height="160" alt="Моноподы для селфи">
-            <span class="list-product-item-caption">Моноподы для селфи</span></a>
+            <span class="list-product-item-caption list-product-item-caption-monopod">Моноподы для селфи</span></a>
           </li>
           <li class="list-product-item">
             <a class="list-product-item-link" href=""><img class="list-product-item-img"  src="images/index-catalog-images-2.svg" width="160" height="160" alt="Экшн-камеры">
@@ -172,35 +172,39 @@
           </li>
         </ul>
       </section>
-      <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services-list">
-          <li class="services-list-item">
-            <button class="button-services button-services-current" type="button">Доставка</button>
-          </li>
-          <li class="services-list-item">
-            <button class="button-services" type="button">Гарантия</button>
-          </li>
-          <li class="services-list-item">
-            <button class="button-services" type="button">Кредит</button>
-          </li>
-        </ul>
-        <dl>
-          <dt class="services-title">Доставка</dt>
-            <dd class="services-content services-content-delivery">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.
-            </dd>
-            <dt class="services-title">Гарантия</dt>
-            <dd class="services-content services-content-guarantee">Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </dd>
-            <dt class="services-title">Кредит</dt>
-            <dd class="services-content services-content-credit">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
-            </dd>
-        </dl>
-      </section>
+      <div class="services">
+        <section class="services-container">
+          <h2 class="visually-hidden">Услуги</h2>
+          <ul class="services-list">
+            <li class="services-list-item">
+              <button class="button-services button-services-current" type="button">Доставка</button>
+            </li>
+            <li class="services-list-item">
+              <button class="button-services" type="button">Гарантия</button>
+            </li>
+            <li class="services-list-item">
+              <button class="button-services" type="button">Кредит</button>
+            </li>
+          </ul>
+
+          <div class="services-container-inner">
+            <dl class="description-list">
+              <dt class="services-title">Доставка</dt>
+              <dd class="services-content services-content-delivery">Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно! Ведь
+                  мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+              <dt class="services-title visually-hidden">Гарантия</dt>
+              <dd class="services-content services-content-guarantee visually-hidden">Если из-за возгорания купленного у нас товара у вас
+                  сгорит дом — не переживайте, мы выдадим вам новый.
+                  Товар, не дом, конечно же.</dd>
+              <dt class="services-title visually-hidden">Кредит</dt>
+              <dd class="services-content services-content-credit visually-hidden">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</dd>
+            </dl>
+          </div>
+
+        </section>
+      </div>
+
       <div class="delivery-link-container">
         <a class="delivery-link" href="#">
           <span class="button-delivery-caption" >Доставим редкий товар под заказ</span>

@@ -635,7 +635,6 @@ body {
 
 .page-footer {
   width: 100%;
-  min-height: 321px;
   margin: 0 auto ;
   background-color: #444444;
   color: #FFFFFF;
@@ -666,7 +665,8 @@ body {
 
 .logo-html-academy {
   display: block;
-  margin-left: auto;
+  margin: 0 0 65px auto;
+
 }
 
 .footer-content-address {

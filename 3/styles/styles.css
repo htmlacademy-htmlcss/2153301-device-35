@@ -254,6 +254,7 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+  margin-left: 40px;
   margin-bottom: 60px;
 }
 
@@ -445,13 +446,16 @@ body {
 
 .about-us-contacts-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
   width: 1160px;
   min-height: 545px;
 }
 
 .about-us-contacts-title {
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -460,9 +464,22 @@ body {
 }
 
 .about-us-content {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
   color: #444444;
   background-color: #FFFFFF;
   width: 497px;
+}
+
+.delivery-company {
+  margin: 0;
+  margin-bottom: 40px;
+  padding-left: 35px;
+}
+
+.delivery-company-item:not(:last-child) {
+  margin-bottom: 19px;
 }
 
 .delivery-company-item {
@@ -474,6 +491,7 @@ body {
 }
 
 .more-about-us {
+  margin-left: 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -487,6 +505,7 @@ body {
 }
 
 .contacts-address {
+  margin-bottom: 30px;
   color: #444444;
   font-style: normal;
 }
@@ -496,15 +515,38 @@ body {
 }
 
 .contacts-subtitle {
+  margin: 0;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 24px;
 }
 
+.contacts-schedule {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
 .contacts-address-tel-time {
+  margin: 0;
   color: #444444;
   background-color: #FFFFFF;
 }
 
+.wright-us {
+  margin-left: 34px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
 
 .newsletter {
   display: flex;
@@ -527,7 +569,7 @@ body {
 
 .newsletter-title {
   width: 348px;
-  margin: 0 auto 0 0;
+  margin: 0 252px 144px 0;
   padding: 0;
   min-height: 100px;
   font-family: "Raleway", sans-serif;
@@ -609,7 +651,8 @@ body {
 }
 
 .device-logo-footer {
-  margin-top: 62px;
+  margin: 62px 0 35px;
+
 }
 
 .footer-content {
@@ -625,10 +668,6 @@ body {
 
 .services-page-footer {
   display: flex;
-}
-
-.services-page-footer-item-title {
-
 }
 
 .services-page-footer-item-link {

@@ -604,6 +604,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  opacity: 0.5;
   color: #444444;
   background-color: #F0F0F0;
 }
@@ -660,13 +661,11 @@ body {
 
 .footer-column {
   margin: 0 183px 0 auto;
-  width: ;
 }
 
 .logo-html-academy {
   display: block;
   margin: 0 0 65px auto;
-
 }
 
 .footer-content-address {

@@ -469,7 +469,7 @@ body {
   padding: 0;
   color: #444444;
   background-color: #FFFFFF;
-  width: 497px;
+  width: 100%;
 }
 
 .delivery-company {
@@ -609,10 +609,11 @@ body {
 }
 
 .newsletter-button {
-  width: 253px;
+  width: 251px;
   height: 57px;
-  margin: 0;
+  margin: 0 220px 0 -5px;
   padding: 0;
+  border: #C4C4C4 solid 3px;
 }
 
 .newsletter-button-caption {
@@ -652,23 +653,36 @@ body {
 
 .device-logo-footer {
   margin: 62px 0 35px;
-
 }
 
-.footer-content {
+.inner-page-footer-container {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1159px;
+}
+
+.footer-column {
+  margin: 0 183px 0 auto;
+  width: ;
+}
+
+.logo-html-academy {
+  display: block;
+  margin-left: auto;
 }
 
 .footer-content-address {
   width: 239px;
+  margin: 0;
 }
 
 .services-page-footer {
   display: flex;
+  justify-content: space-between;
+  width: 444px;
+  margin: 0;
+  padding: 0;
+  list-style:  none;
 }
+
 
 .services-page-footer-item-link {
   text-decoration: none;
@@ -681,7 +695,15 @@ body {
   color:#FFFFFF;
 }
 
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .contacts-phone-footer{
+  display: block;
+  margin-bottom: 63px;
   color: #FFFFFF;
 }
 

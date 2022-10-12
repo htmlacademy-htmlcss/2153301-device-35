@@ -81,12 +81,14 @@ body {
 
 .search-input {
   width: 359px;
-  height: 37px;
+  height: 33px;
   font-family: "Rubik",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .search-button {
@@ -202,16 +204,19 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-
+  list-style: none;
 }
 
 .description-product {
   display: flex;
+  justify-content: space-between;
 }
 
 .slider-content {
   display: flex;
   flex-direction: column;
+  width: 560px;
+  margin: 0;
 }
 
 .number-product {
@@ -222,6 +227,7 @@ body {
   line-height: 30px;
   color: #FFFFFF;
   background-color: #FFE17F;
+  margin-left: 300px;
 }
 
 .advantages-description-title {
@@ -231,11 +237,14 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin: 0;
+  margin-bottom: 29px;
 }
 
 .advantages-description {
   color: #444444;
   background-color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .detail-title {
@@ -244,11 +253,14 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .detail-definition {
   font-size: 36px;
   line-height: 30px;
+  margin: 0;
 }
 
 .detail-term {
@@ -378,6 +390,7 @@ body {
 }
 
 .services-content {
+  width: 452px;
   color: #444444;
   margin: 0;
 }
@@ -496,7 +509,6 @@ body {
 .newsletter {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   background-color: #F0F0F0;
   color:#000000;
   width: 100%;
@@ -505,7 +517,8 @@ body {
 
 .newsletter-container {
   width: 1160px;
-  margin: 0 auto;
+  min-height: 301px;
+  margin: 64px auto 56px;
 }
 
 .newsletter-block {
@@ -514,6 +527,8 @@ body {
 
 .newsletter-title {
   width: 348px;
+  margin: 0 auto 0 0;
+  padding: 0;
   min-height: 100px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -526,6 +541,8 @@ body {
 
 .newsletter-title-content {
   width: 560px;
+  margin: 0;
+  padding: 0;
   min-height: 90px;
   color: #444444;
   background-color: inherit;
@@ -536,6 +553,10 @@ body {
 }
 
 .field {
+  margin: 0;
+  padding: 0;
+  width: 557px;
+  height: 53px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -543,6 +564,13 @@ body {
   line-height: 30px;
   color: #444444;
   background-color: #F0F0F0;
+}
+
+.newsletter-button {
+  width: 253px;
+  height: 57px;
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-button-caption {

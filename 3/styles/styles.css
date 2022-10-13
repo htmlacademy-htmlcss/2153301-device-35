@@ -258,10 +258,13 @@ body {
   margin-bottom: 60px;
 }
 
-.detail-definition {
-  font-size: 36px;
-  line-height: 30px;
-  margin: 0;
+.detail-list {
+  display: flex;
+}
+
+.detail-list-container {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .detail-term {
@@ -271,10 +274,20 @@ body {
   background-color: #FFFFFF;
 }
 
+.detail-definition {
+  font-size: 36px;
+  line-height: 30px;
+  margin: 0 auto 12px 0;
+}
+
+.detail-list-container:not(:last-child) {
+  margin-right: 40px;
+}
+
 .slider-pagination {
   display: flex;
   width: 76px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   padding: 0;
   list-style: none;
 }
@@ -283,6 +296,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 70px;
 }
 
 .list-product {
@@ -322,6 +336,7 @@ body {
 
 .services {
    width: 100%;
+   margin-bottom: 70px;
    background-color: #F0F0F0;
 }
 
@@ -419,7 +434,7 @@ body {
   align-items: center;
   width: 1160px;
   min-height: 100px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   background-color: #F0F0F0;
   color: #000000;
 }

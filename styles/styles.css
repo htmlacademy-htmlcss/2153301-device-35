@@ -678,6 +678,7 @@ body {
   justify-content: space-between;
   width: 444px;
   margin: 0;
+  margin-bottom: 77px;
   padding: 0;
   list-style:  none;
 }
@@ -692,10 +693,14 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color:#FFFFFF;
+  letter-spacing: 0.2em;
 }
 
 .footer-social-list {
-  margin: 0;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }

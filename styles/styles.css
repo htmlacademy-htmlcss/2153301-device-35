@@ -258,10 +258,13 @@ body {
   margin-bottom: 60px;
 }
 
-.detail-definition {
-  font-size: 36px;
-  line-height: 30px;
-  margin: 0;
+.detail-list {
+  display: flex;
+}
+
+.detail-list-container {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .detail-term {
@@ -269,6 +272,16 @@ body {
   line-height: 30px;
   color: #444444;
   background-color: #FFFFFF;
+}
+
+.detail-definition {
+  font-size: 36px;
+  line-height: 30px;
+  margin: 0 auto 12px 0;
+}
+
+.detail-list-container:not(:last-child) {
+  margin-right: 40px;
 }
 
 .slider-pagination {

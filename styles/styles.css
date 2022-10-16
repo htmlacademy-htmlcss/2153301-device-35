@@ -756,6 +756,7 @@ body {
 
 .breadcrumbs-item {
   list-style: none;
+  margin-bottom: 34px;
 }
 
 .breadcrumbs-link {

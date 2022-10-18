@@ -626,7 +626,7 @@ body {
   margin: 0;
   padding: 0;
   width: 557px;
-  height: 53px;
+  height: 51px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -635,13 +635,14 @@ body {
   opacity: 0.5;
   color: #444444;
   background-color: #F0F0F0;
+  border: 3px solid #C4C4C4;
 }
 
 .newsletter-button {
   width: 251px;
   height: 57px;
-  margin: 0 220px 0 -5px;
   padding: 0;
+  margin-left: -5px;
   border: #C4C4C4 solid 3px;
 }
 
@@ -658,6 +659,8 @@ body {
 }
 
 .newsletter-free {
+  display: block;
+  margin: auto 0 auto auto;
   color: #444444;
   background-color: #F0F0F0;
 }

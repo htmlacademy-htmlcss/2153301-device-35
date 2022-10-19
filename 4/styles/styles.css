@@ -65,7 +65,7 @@ body {
 .navigation-search-container {
   display: flex;
   width: 1040px;
-  margin: 0 auto 45px;
+  margin: 0 auto 31px;
 }
 
 .search {
@@ -154,13 +154,14 @@ body {
 
 .menu {
   width: 1040px;
+  height: 50px;
   margin: 0 auto;
 }
 
 .menu-list {
   display: flex;
-  padding: 0;
-  margin: 0;
+  padding: 14px 0;
+  margin: 0 auto 20px;
   width: 1040px;
   list-style-type: none;
   flex-wrap: wrap;
@@ -410,7 +411,33 @@ body {
   list-style-type: none;
 }
 
+.container-delivery {
+  width: 694px;
+  background-image: url("../images/deliveryman.svg");
+  background-size: 136px 164px;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.container-guarantee {
+  width: 694px;
+  background-image: url("../images/guarantee.svg");
+  background-size: 171px 195px;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding: 11px 0;
+}
+
+.container-credit {
+  width: 694px;
+  background-image: url("../images/credit.svg");
+  background-size: 156px 188px;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
 .services-title {
+  width: 452px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -423,24 +450,6 @@ body {
   width: 452px;
   color: #444444;
   margin: 0;
-}
-
-.services-content-delivery {
-  background-image: url("../images/deliveryman.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-}
-
-.services-content-guarantee {
-  background-image: url("../images/guarantee.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
-}
-
-.services-content-credit {
-  background-image: url("../images/credit.svg");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
 }
 
 .delivery-link-container {

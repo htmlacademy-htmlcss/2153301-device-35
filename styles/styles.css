@@ -144,7 +144,7 @@ body {
   font-style: normal;
   text-decoration: none;
   color: #000000;
-  padding: 3px 3px;
+  padding: 3px;
 }
 
 .exit {
@@ -401,7 +401,6 @@ body {
 
 .services-container-inner {
   width: 694px;
-  height: 174px;
   margin: 72px auto 145px 116px;
 }
 
@@ -634,6 +633,10 @@ body {
   display: flex;
 }
 
+.newsletter-form {
+  display: flex;
+}
+
 .field {
   margin: 0;
   padding: 0;
@@ -644,8 +647,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  opacity: 0.5;
-  color: #444444;
+  color: rgb(68, 68, 68, 0.5);
   background-color: #F0F0F0;
   border: 3px solid #C4C4C4;
 }
@@ -654,7 +656,6 @@ body {
   width: 251px;
   height: 57px;
   padding: 0;
-  margin-left: -5px;
   border: #C4C4C4 solid 3px;
 }
 

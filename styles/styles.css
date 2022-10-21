@@ -206,7 +206,7 @@ body {
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
-  background: linear-gradient(to top,white 75%, #FFE17F 25%);
+  background: linear-gradient(to top, white 75%, #FFE17F 25%);
 }
 
 .description-product {
@@ -349,7 +349,7 @@ body {
 .services {
   width: 100%;
   margin-bottom: 70px;
-  background-color: #F0F0F0;
+  background: linear-gradient(to top, #F0F0F0 74%, white 26%);
 }
 
 .services-container {
@@ -362,7 +362,7 @@ body {
 .services-list {
   justify-content: space-around;
   align-items: center;
-  min-height: 319px;
+  min-height: 191px;
   padding: 64px 0;
   margin: 0;
   list-style-type: none;

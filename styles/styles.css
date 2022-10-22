@@ -40,6 +40,10 @@ body {
   color: #000000;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .page-header {
   width: 1160px;
   min-height: 186px;
@@ -207,6 +211,11 @@ body {
   padding: 0;
   list-style-type: none;
   background: linear-gradient(to top, white 75%, #FFE17F 25%);
+}
+
+.slider-item:nth-child(2),
+.slider-item:nth-child(3) {
+  display: none;
 }
 
 .description-product {

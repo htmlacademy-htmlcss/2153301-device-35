@@ -40,7 +40,7 @@ body {
   color: #000000;
 }
 
-.main-container {
+button .main-container {
   flex-grow: 1;
 }
 
@@ -758,6 +758,16 @@ body {
   flex-wrap: wrap;
 }
 
+.footer-social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FFFFFF4D;
+}
+
 .contacts-phone-footer {
   display: block;
   margin-bottom: 63px;
@@ -962,6 +972,24 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  border: 2px solid ;
+  border-radius: 50%;
 }
 
 .button-pagination-show-more {

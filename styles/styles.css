@@ -40,6 +40,10 @@ body {
   color: #000000;
 }
 
+ .main-container {
+  flex-grow: 1;
+}
+
 .page-header {
   width: 1160px;
   min-height: 186px;
@@ -64,11 +68,6 @@ body {
 .search {
   display: flex;
   width: 517px;
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   margin: 0 27px 0 0;
 }
 
@@ -80,8 +79,17 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
+  background-color: #FFE17F;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 48px;
+  border: 2px solid #000000;
+  border-right: 0;
+  border-radius: 50px 0 0 50px;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center left 16px;
 }
 
 .search-button {
@@ -93,8 +101,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  background-color: #FFE17F;
   margin: 0;
   padding: 0;
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
 }
 
 .navigation {
@@ -209,6 +220,11 @@ body {
   background: linear-gradient(to top, white 75%, #FFE17F 25%);
 }
 
+.slider-item:nth-child(2),
+.slider-item:nth-child(3) {
+  display: none;
+}
+
 .description-product {
   display: flex;
   justify-content: space-between;
@@ -255,15 +271,26 @@ body {
   margin-bottom: 60px;
 }
 
-.detail-title {
+.button-1 {
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
   text-transform: uppercase;
+  padding: 10px;
   margin: 0;
-  margin-left: 40px;
-  margin-bottom: 60px;
+  width: 220px;
+  height: 40px;
+  cursor: pointer;
+  color: #000000;
+  letter-spacing: 0.2em;
+  background-image: url("../images/bar-detail-show.svg");
+  background-size: 220px 8px;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  border: none;
 }
 
 .detail-list {
@@ -360,8 +387,7 @@ body {
 }
 
 .services-list {
-  justify-content: space-around;
-  align-items: center;
+  width: 280px;
   min-height: 191px;
   padding: 64px 0;
   margin: 0;
@@ -374,28 +400,42 @@ body {
 }
 
 .button-services {
-  width: 280px;
-  min-height: 40px;
+  text-align: center;
+  width: 160px;
+  height: 40px;
   margin: 0;
   padding: 0;
-  border: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
+  color: #000000;
+  border: none;
+  background-image: url("../images/bar-delivery-garanty-credit.svg");
+  background-size: 160px 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .button-services-current {
+  width: 280px;
+  height: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-align: start;
+  padding-left: 15px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  border: none;
   color: #FFE17F;
   background-color: #000000;
+  background-image: none;
+  cursor: pointer;
 }
 
 .services-container-inner {
@@ -484,9 +524,8 @@ body {
 .about-us-contacts-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   width: 1160px;
-  min-height: 545px;
 }
 
 .about-us-contacts-title {
@@ -529,7 +568,10 @@ body {
 }
 
 .more-about-us {
-  margin-left: 20px;
+  box-sizing: border-box;
+  width: 270px;
+  height: 40px;
+  padding: 10px 23px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -540,6 +582,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
+  background-image: url("../images/bar-about us.svg");
+  background-size: 270px 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .contacts-address {
@@ -573,7 +620,10 @@ body {
 }
 
 .wright-us {
-  margin-left: 34px;
+  box-sizing: border-box;
+  width: 259px;
+  height: 40px;
+  padding: 10px 33px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -584,6 +634,11 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
+  background-image: url("../images/bar-contacts.svg");
+  background-size: 270px 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .newsletter {
@@ -638,9 +693,9 @@ body {
 
 .field {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 11px;
   width: 557px;
-  height: 51px;
+  height: 54px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -648,7 +703,8 @@ body {
   line-height: 30px;
   color: rgb(68, 68, 68, 0.5);
   background-color: #F0F0F0;
-  border: 3px solid #C4C4C4;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
 }
 
 .newsletter-button {
@@ -747,6 +803,24 @@ body {
   padding: 0;
   list-style-type: none;
   flex-wrap: wrap;
+}
+
+ .footer-social-item {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+   background-color: #FFFFFF4D;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #444444;
 }
 
 .contacts-phone-footer {
@@ -874,12 +948,22 @@ body {
   width: 220px;
   min-height: 40px;
   margin: 45px auto;
+  padding: 10px 23px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+  background-color: #F0F0F0;
+  background-image: url("../images/bar-detail-show.svg") ;
+  background-size: 220px 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: none;
 }
 
 .catalog-right-column {
@@ -953,6 +1037,24 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  border: 2px solid;
+  border-radius: 50%;
 }
 
 .button-pagination-show-more {

@@ -40,7 +40,7 @@ body {
   color: #000000;
 }
 
-button .main-container {
+ .main-container {
   flex-grow: 1;
 }
 
@@ -68,11 +68,6 @@ button .main-container {
 .search {
   display: flex;
   width: 517px;
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   margin: 0 27px 0 0;
 }
 
@@ -84,8 +79,13 @@ button .main-container {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #000000;
+  background-color: #FFE17F;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 16px;
+  border: 2px solid #000000;
+  border-right: 0;
+  border-radius: 50px 0 0 50px;
 }
 
 .search-button {
@@ -97,8 +97,11 @@ button .main-container {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  background-color: #FFE17F;
   margin: 0;
   padding: 0;
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
 }
 
 .navigation {
@@ -264,15 +267,26 @@ button .main-container {
   margin-bottom: 60px;
 }
 
-.detail-title {
+.button-1 {
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
   text-transform: uppercase;
+  padding: 10px;
   margin: 0;
-  margin-left: 40px;
-  margin-bottom: 60px;
+  width: 220px;
+  height: 40px;
+  cursor: pointer;
+  color: #000000;
+  letter-spacing: 0.2em;
+  background-image: url("../images/bar-detail-show.svg");
+  background-size: 220px 8px;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  border: none;
 }
 
 .detail-list {
@@ -369,8 +383,7 @@ button .main-container {
 }
 
 .services-list {
-  justify-content: space-around;
-  align-items: center;
+  width: 280px;
   min-height: 191px;
   padding: 64px 0;
   margin: 0;
@@ -383,28 +396,42 @@ button .main-container {
 }
 
 .button-services {
-  width: 280px;
-  min-height: 40px;
+  text-align: center;
+  width: 160px;
+  height: 40px;
   margin: 0;
   padding: 0;
-  border: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
+  color: #000000;
+  border: none;
+  background-image: url("../images/bar-delivery-garanty-credit.svg");
+  background-size: 160px 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .button-services-current {
+  width: 280px;
+  height: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-align: start;
+  padding-left: 15px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  border: none;
   color: #FFE17F;
   background-color: #000000;
+  background-image: none;
+  cursor: pointer;
 }
 
 .services-container-inner {
@@ -493,9 +520,8 @@ button .main-container {
 .about-us-contacts-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   width: 1160px;
-  min-height: 545px;
 }
 
 .about-us-contacts-title {
@@ -538,7 +564,10 @@ button .main-container {
 }
 
 .more-about-us {
-  margin-left: 20px;
+  box-sizing: border-box;
+  width: 270px;
+  height: 40px;
+  padding: 10px 23px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -549,6 +578,11 @@ button .main-container {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
+  background-image: url("../images/bar-about us.svg");
+  background-size: 270px 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .contacts-address {
@@ -582,7 +616,10 @@ button .main-container {
 }
 
 .wright-us {
-  margin-left: 34px;
+  box-sizing: border-box;
+  width: 259px;
+  height: 40px;
+  padding: 10px 33px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -593,6 +630,11 @@ button .main-container {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
+  background-image: url("../images/bar-contacts.svg");
+  background-size: 270px 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .newsletter {
@@ -647,9 +689,9 @@ button .main-container {
 
 .field {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 11px;
   width: 557px;
-  height: 51px;
+  height: 54px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -657,7 +699,8 @@ button .main-container {
   line-height: 30px;
   color: rgb(68, 68, 68, 0.5);
   background-color: #F0F0F0;
-  border: 3px solid #C4C4C4;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
 }
 
 .newsletter-button {
@@ -893,12 +936,22 @@ button .main-container {
   width: 220px;
   min-height: 40px;
   margin: 45px auto;
+  padding: 10px 23px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+  background-color: #F0F0F0;
+  background-image: url("../images/bar-detail-show.svg") ;
+  background-size: 220px 8px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: none;
 }
 
 .catalog-right-column {
@@ -988,7 +1041,7 @@ button .main-container {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.6);
-  border: 2px solid ;
+  border: 2px solid;
   border-radius: 50%;
 }
 

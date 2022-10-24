@@ -82,10 +82,14 @@ body {
   color: #000000;
   background-color: #FFE17F;
   margin: 0;
-  padding: 0 0 0 16px;
+  padding: 0 0 0 48px;
   border: 2px solid #000000;
   border-right: 0;
   border-radius: 50px 0 0 50px;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center left 16px;
 }
 
 .search-button {
@@ -801,14 +805,22 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ .footer-social-item {
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #FFFFFF4D;
+   background-color: #FFFFFF4D;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #444444;
 }
 
 .contacts-phone-footer {

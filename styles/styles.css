@@ -92,6 +92,11 @@ body {
   background-position: center left 16px;
 }
 
+.search-input:focus {
+  outline: 2px #AF4FFF solid;
+
+}
+
 .search-button {
   width: 150px;
   height: 40px;
@@ -106,6 +111,15 @@ body {
   padding: 0;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
+}
+
+.search-button:hover {
+  color: #FFFFFF;
+  background-color:  #000000;
+}
+
+.search-button:active {
+  opacity: 0.3;
 }
 
 .navigation {

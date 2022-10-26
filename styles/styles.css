@@ -83,7 +83,6 @@ body {
   margin: 0 23px 0 0;
 }
 
-
 .form-input-container:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
@@ -135,7 +134,7 @@ body {
   background-color:  #000000;
 }
 
-.search-button:active {
+.search-button:active span {
   opacity: 0.3;
 }
 
@@ -273,8 +272,8 @@ body {
 
 .menu-item-catalog-link {
   position: relative;
-  padding-left: 0;
-  padding-right: 70px;
+  padding:15px 70px 15px 0;
+
 }
 
 .circle {
@@ -384,13 +383,14 @@ body {
 }
 
 .button-1 {
-  box-sizing: border-box;
+  box-sizing: border-box ;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   padding: 10px;
   margin: 0;
   width: 220px;
@@ -403,6 +403,21 @@ body {
   background-repeat: no-repeat;
   background-position: 100% 50%;
   border: none;
+
+}
+
+.style-3:hover {
+  background: rgba(255, 225, 127, 1);
+}
+
+.style-3:active {
+  background: rgba(255, 204, 51, 1);
+
+}
+
+.style-3:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset:  -2px;
 }
 
 .detail-list {
@@ -819,11 +834,31 @@ body {
   border-bottom: 3px solid #C4C4C4;
 }
 
+.field:focus-visible {
+  outline:2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
 .newsletter-button {
   width: 251px;
   height: 57px;
   padding: 0;
   border: #C4C4C4 solid 3px;
+}
+
+.style-2:hover {
+  border: 3px solid rgba(0, 0, 0, 1);
+}
+
+.style-2:active {
+  opacity: 0.3;
+}
+
+.style-2:focus-visible {
+  outline:2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+  z-index: 1;
 }
 
 .newsletter-button-caption {

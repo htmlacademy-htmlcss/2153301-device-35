@@ -18,7 +18,8 @@
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form-input-container"><input type="text" class="search-input" name="search-input"
               id="search-input" placeholder="Поиск по сайту"></div>
-          <div class="form-input-container"><button type="button" class="search-button"><span>Найти</span></button></div>
+          <div class="form-input-container"><button type="button" class="search-button"><span>Найти</span></button>
+          </div>
           <span class="visually-hidden">Поиск по сайту</span>
         </form>
         <nav class="navigation">
@@ -33,15 +34,15 @@
                 </svg>Войти</a>
             </li>
             <li class="navigation-item navigation-item-compare">
-              <a class="navigation-link navigation-compare-link style-1" href="#"><svg class="compare-icon" aria-hidden="true"
-                  focusable="false" width="10" height="13" viewBox="0 0 10 13" fill="none"
+              <a class="navigation-link navigation-compare-link style-1" href="#"><svg class="compare-icon"
+                  aria-hidden="true" focusable="false" width="10" height="13" viewBox="0 0 10 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 .79H4v12h2v-12ZM2 4.79H0v8h2v-8ZM10 3.79H8v9h2v-9Z" fill="#000" />
                 </svg>Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-basket-link style-1" href="#"><svg class="basket-icon" aria-hidden="true"
-                  focusable="false" width="31" height="22" viewBox="0 0 31 22" fill="none"
+              <a class="navigation-link navigation-basket-link style-1" href="#"><svg class="basket-icon"
+                  aria-hidden="true" focusable="false" width="31" height="22" viewBox="0 0 31 22" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)">
                     <path
@@ -102,6 +103,19 @@
 
     <main class="main-index main-container">
       <div class="slider">
+
+        <div class="slider-button-container">
+          <button type="button" class="slider-button slider-prev style-1">
+            <span class="visually-hidden">предыдущий товар</span>
+            <img src="images/slider-control-prev.svg" width="20" height="60" alt="предыдущий товар">
+          </button>
+          <button type="button" class="slider-button slider-next style-1">
+            <span class="visually-hidden">следующий товар</span>
+            <img src="images/slider-control-next.svg" width="20" height="60" alt="следующий товар">
+          </button>
+        </div>
+
+
         <ol class="slider-list">
           <li class="slider-item">
             <section class="description-product">
@@ -183,70 +197,60 @@
           </li>
         </ol>
 
-        <div class="slider-button-container">
-          <button type="button" class="slider-button slider-prev">
-            <span class="visually-hidden">предыдущий товар</span>
-            <img src="images/slider-control-prev.svg" width="20" height="60" alt="предыдущий товар">
-          </button>
-          <button type="button" class="slider-button slider-next">
-            <span class="visually-hidden">следующий товар</span>
-            <img src="images/slider-control-next.svg" width="20" height="60" alt="следующий товар">
-          </button>
-        </div>
-
-
-      </div>
-<ol class="slider-pagination">
+        <ol class="slider-pagination">
           <li class="slider-pagination-item">
-            <button type="button" class="slider-pagination-button slider-pagination-button-current">
+            <button type="button" class="slider-pagination-button slider-pagination-button-current style-1">
               <span class="visually-hidden">1 фото</span>
               <img src="images/pagination-current.svg" width="12" height="12" alt="активная кнопка пагинации">
             </button>
           </li>
           <li class="slider-pagination-item">
-            <button type="button" class="slider-pagination-button">
+            <button type="button" class="slider-pagination-button style-1">
               <span class="visually-hidden">2 фото</span>
               <img src="images/pagination.svg" width="12" height="12" alt="кнопка пагинации">
             </button>
           </li>
           <li class="slider-pagination-item">
-            <button type="button" class="slider-pagination-button">
+            <button type="button" class="slider-pagination-button style-1">
               <span class="visually-hidden">3 фото</span>
               <img src="images/pagination.svg" width="12" height="12" alt="кнопка пагинации">
             </button>
           </li>
         </ol>
 
+      </div>
+
+
       <section class="product">
         <h2 class="visually-hidden">Витрина товаров</h2>
         <ul class="list-product">
           <li class="list-product-item">
-            <a class="list-product-item-link" href=""><img class="list-product-item-img"
+            <a class="list-product-item-link style-4" href=""><img class="list-product-item-img image-1"
                 src="images/index-catalog-images-0.svg" width="160" height="160" alt="Очки виртуальной реальности">
               <span class="list-product-item-caption">Виртуальная реальность</span></a>
           </li>
           <li class="list-product-item">
-            <a class="list-product-item-link" href="catalog.html"><img class="list-product-item-img"
+            <a class="list-product-item-link style-4" href="catalog.html"><img class="list-product-item-img image-1"
                 src="images/index-catalog-images-1.svg" width="160" height="160" alt="Моноподы для селфи">
-              <span class="list-product-item-caption list-product-item-caption-monopod">Моноподы для селфи</span></a>
+              <span class="list-product-item-caption ">Моноподы для селфи</span></a>
           </li>
           <li class="list-product-item">
-            <a class="list-product-item-link" href=""><img class="list-product-item-img"
+            <a class="list-product-item-link style-4" href=""><img class="list-product-item-img image-1"
                 src="images/index-catalog-images-2.svg" width="160" height="160" alt="Экшн-камеры">
               <span class="list-product-item-caption">Экшн-камеры</span></a>
           </li>
           <li class="list-product-item">
-            <a class="list-product-item-link" href=""><img class="list-product-item-img"
+            <a class="list-product-item-link style-4" href=""><img class="list-product-item-img image-1"
                 src="images/index-catalog-images-3.svg" width="160" height="160" alt="Фитнес-браслеты">
               <span class="list-product-item-caption">Фитнес-браслеты</span></a>
           </li>
           <li class="list-product-item">
-            <a class="list-product-item-link" href=""><img class="list-product-item-img"
+            <a class="list-product-item-link style-4" href=""><img class="list-product-item-img image-1"
                 src="images/index-catalog-images-4.svg" width="160" height="160" alt="Умные часы">
               <span class="list-product-item-caption">Умные часы</span></a>
           </li>
           <li class="list-product-item">
-            <a class="list-product-item-link" href=""><img class="list-product-item-img"
+            <a class="list-product-item-link style-4" href=""><img class="list-product-item-img image-1"
                 src="images/index-catalog-images-5.svg" width="160" height="160" alt="Квадрокоптеры">
               <span class="list-product-item-caption">Квадрокоптеры</span></a>
           </li>

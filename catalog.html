@@ -10,12 +10,12 @@
   <body>
     <header class="page-header">
       <h2 class="visually-hidden">Интернет-магазин "Девайс"</h2>
-      <a class="device-logo" href="index.html"><img src="images/device-logo.svg" width="145" height="36"
+      <a class="device-logo style-1" href="index.html"><img src="images/device-logo.svg" width="145" height="36"
           alt="логотип девайс"></a>
       <div class="navigation-search-container">
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text" class="search-input" name="search-input" id="search-input" placeholder="Поиск по сайту">
-          <button type="button" class="search-button">Найти</button>
+          <div class="form-input-container"><input type="text" class="search-input" name="search-input" id="search-input" placeholder="Поиск по сайту"></div>
+          <div class="form-input-container"><button type="button" class="search-button">Найти</button></div>
           <span class="visually-hidden">Поиск по сайту</span>
         </form>
         <nav class="navigation">
@@ -40,11 +40,22 @@
           </ul>
         </nav>
       </div>
-      <div class="menu">
         <ul class="menu-list">
           <li class="menu-item menu-item-catalog">
-            <a class="menu-item-link" href="#">
+            <a class="menu-item-link menu-item-catalog-link" href="#">
               <h2 class="menu-title">Каталог товаров</h2>
+              <svg class="circle" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 50 50"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity=".3" cx="25" cy="25" r="24" stroke="#000" stroke-width="2" />
+                <g opacity=".3" clip-path="url(#b)">
+                  <path d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" />
+                </g>
+                <defs>
+                  <clipPath id="b">
+                    <path fill="#fff" transform="translate(17 17)" d="M0 0h16v16H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
             </a>
           </li>
           <li class="menu-item menu-item-delivery">
@@ -58,7 +69,7 @@
             </a>
           </li>
           <li class="menu-item">
-            <a class="menu-item-link" href="#">
+            <a class="menu-item-link menu-item-contacts-link" href="#">
               <h2 class="menu-title">Контакты</h2>
             </a>
           </li>

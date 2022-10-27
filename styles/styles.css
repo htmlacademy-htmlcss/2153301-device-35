@@ -654,6 +654,7 @@ body {
 
 .delivery-link-container {
   display: flex;
+  position: relative;
   width: 1160px;
   min-height: 100px;
   margin: 0 auto 70px;
@@ -672,6 +673,7 @@ body {
 .button-delivery-caption {
   display: block;
   margin: auto;
+  margin-left: 190px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -682,26 +684,50 @@ body {
 }
 
 .delivery-link::before {
-  content: url("../images/delivery-car.svg");
-
+  content: "";
+  background: url("../images/delivery-car.svg") no-repeat 50% 50%;
+  background-size: 47px 31px;
   width: 125px;
   height: 100px;
-  background: rgba(255, 225, 127, 1);
+  background-color: rgba(255, 225, 127, 1);
+}
+
+.delivery-link::after {
+  content: "";
   position: relative;
+  top: 30px;
+  right: 42px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(220, 220, 220, 0.5);
 }
 
-/* .style-4:hover .image-1 {
-  background: rgba(255, 199, 0, 1);
-}
-
-.style-4:active {
+.attention {
+  position: absolute;
+  top: 44px;
+  right: 62px;
   opacity: 0.3;
 }
 
-.style-4:focus-visible {
+.delivery-link-container:hover .delivery-link::before {
+  background-color: rgba(255, 199, 0, 1);
+}
+
+.delivery-link-container:hover .attention {
+  opacity: 1;
+}
+
+.delivery-link:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
-} */
+}
+
+.delivery-link-container:active {
+  opacity: 0.3;
+}
+
+
 
 .about-us {
   width: 520px;
@@ -750,11 +776,26 @@ body {
 }
 
 .delivery-company-item {
+  position: relative;
+  display: block;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+}
+
+.delivery-company-item::before {
+  display: inline-block;
+  position: absolute;
+  bottom: 7px;
+
+  left: -30px;
+  content: "";
+  background: url("../images/yellowball.svg");
+  background-size: 8px 8px;
+  width: 8px;
+  height: 8px;
 }
 
 .more-about-us {
@@ -891,16 +932,15 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: rgb(68, 68, 68, 0.5);
+  color: #000000;
   background-color: #F0F0F0;
   border: none;
   border-bottom: 3px solid #C4C4C4;
 }
 
 .field:focus-visible {
-  outline: 2px solid rgba(175, 79, 255, 1);
-  outline-offset: 2px;
-  z-index: 1;
+  outline: none;
+  background-color: rgba(220, 220, 220, 1);
 }
 
 .newsletter-button {
@@ -908,14 +948,19 @@ body {
   height: 57px;
   padding: 0;
   border: #C4C4C4 solid 3px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .style-2:hover {
   border: 3px solid rgba(0, 0, 0, 1);
-}
-
-.style-2:active {
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .style-2:focus-visible {
@@ -924,16 +969,8 @@ body {
   z-index: 1;
 }
 
-.newsletter-button-caption {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #F0F0F0;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+.style-2:active {
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .newsletter-free {
@@ -960,8 +997,23 @@ body {
   margin: 0 auto;
 }
 
-.device-logo-footer {
-  margin: 62px 0 35px;
+.link-device-logo-footer {
+  display: inline-block;
+  margin: 62px auto 35px;
+}
+
+.link-device-logo-footer:hover {
+  opacity: 0.6;
+}
+
+.link-device-logo-footer:active {
+  opacity: 0.3;
+}
+
+.link-device-logo-footer:focus-visible {
+  outline: 2px splid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+  
 }
 
 .inner-page-footer-container {

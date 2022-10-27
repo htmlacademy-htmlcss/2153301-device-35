@@ -500,7 +500,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  Letter-spacing: -2%
+
 }
 
 .list-product-item-link {
@@ -666,6 +666,7 @@ body {
   flex-grow: 1;
   background-color: rgba(240, 240, 240, 1);
   text-decoration: none;
+  position: relative;
 }
 
 .button-delivery-caption {
@@ -680,9 +681,27 @@ body {
   letter-spacing: 0.2em;
 }
 
-.button-delivery-caption::after {
-  
+.delivery-link::before {
+  content: url("../images/delivery-car.svg");
+
+  width: 125px;
+  height: 100px;
+  background: rgba(255, 225, 127, 1);
+  position: relative;
 }
+
+/* .style-4:hover .image-1 {
+  background: rgba(255, 199, 0, 1);
+}
+
+.style-4:active {
+  opacity: 0.3;
+}
+
+.style-4:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+} */
 
 .about-us {
   width: 520px;

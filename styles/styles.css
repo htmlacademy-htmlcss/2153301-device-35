@@ -69,6 +69,7 @@ body {
 
 .style-1:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
 }
 
 .navigation-search-container {
@@ -976,8 +977,13 @@ body {
 .newsletter-free {
   display: block;
   margin: auto 0 auto auto;
+  padding-left: 32px;
   color: #444444;
   background-color: #F0F0F0;
+  background-image: url("../images/v.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center left 0;
 }
 
 .page-footer {
@@ -1011,9 +1017,8 @@ body {
 }
 
 .link-device-logo-footer:focus-visible {
-  outline: 2px splid rgba(175, 79, 255, 1);
-  outline-offset: 2px;
-  
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset : 2px;
 }
 
 .inner-page-footer-container {
@@ -1047,6 +1052,7 @@ body {
 
 .services-page-footer-item-link {
   text-decoration: none;
+  padding: 4px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1056,6 +1062,26 @@ body {
   color: #FFFFFF;
   letter-spacing: 0.2em;
 }
+
+.services-page-footer-item-link:hover {
+  color: rgba(255, 199, 0, 1);
+  background: url("../images/bar-social-list.svg");
+  background-repeat: no-repeat;
+  background-size: 125px 2px;
+  background-position: bottom 0 center;
+  z-index: 1;
+}
+
+.services-page-footer-item-link:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset : -2px;
+}
+
+
+.services-page-footer-item-link:active {
+  opacity: 0.6;
+}
+
 
 .footer-social-list {
   display: flex;

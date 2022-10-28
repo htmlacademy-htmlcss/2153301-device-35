@@ -1405,13 +1405,16 @@ body {
   position: relative;
 }
 
+.product-card-link:hover .product-card-button {
+  display: block ;
+
+}
+
 .product-card-link:hover {
   opacity: 0.6;
 }
 
-.product-card-link:hover .product-card-button {
-  display: block;
-}
+
 
 .product-card-link:active {
   opacity: 0.3;

@@ -1510,7 +1510,7 @@ body {
 .pagination-block {
   display: flex;
   width: 760px;
-  min-height: 70px;
+  min-height: 71px;
   margin: 0 auto 78px;
   background-color: #EBEBEB;
   color: #444444;
@@ -1519,14 +1519,14 @@ body {
 .pagination-list {
   width: 100%;
   display: flex;
-  margin: 20px;
   padding: 0;
   list-style-type: none;
 }
 
 .pagination-item {
-  display: inline-block;
-  margin: 0 12px;
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 .pagination-item-prev {
@@ -1538,6 +1538,8 @@ body {
 }
 
 .pagination-link {
+  display: block;
+  text-align: center;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1554,6 +1556,7 @@ body {
 }
 
 a.pagination-link-prev {
+
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1563,6 +1566,7 @@ a.pagination-link-prev {
   background-color: #EBEBEB;
   text-transform: uppercase;
   opacity: 1;
+  letter-spacing: 0.2em;
 }
 
 a.pagination-link-next {
@@ -1575,6 +1579,7 @@ a.pagination-link-next {
   background-color: #EBEBEB;
   text-transform: uppercase;
   opacity: 1;
+  letter-spacing: 0.2em;
 }
 
 .visually-hidden {

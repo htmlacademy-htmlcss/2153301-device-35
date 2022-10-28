@@ -1381,6 +1381,14 @@ body {
   position: relative;
 }
 
+.product-card-link:hover {
+  opacity: 0.8;
+}
+
+.product-card-link:active {
+  opacity: 0.6;
+}
+
 .product-card-box {
   position: relative;
 
@@ -1459,7 +1467,7 @@ body {
   background-size: 220px 8px;
   background-repeat: no-repeat;
   background-position: 50%;
-
+  display: none;
 }
 
 .button-pagination-show-more {

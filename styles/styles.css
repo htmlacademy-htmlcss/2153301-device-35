@@ -81,7 +81,7 @@ body {
 .search {
   display: flex;
   width: 517px;
-  margin: 0 23px 0 0;
+  margin: 0 27px 0 0;
 }
 
 .form-input-container:focus-within {
@@ -155,7 +155,7 @@ body {
 .navigation-list {
   display: flex;
   width: 100%;
-  margin: 5px;
+  margin: 5px 0;
   padding: 0;
   list-style-type: none;
   flex-wrap: wrap;
@@ -171,10 +171,16 @@ body {
   flex-wrap: wrap;
 }
 
-
+.navigation-item-exit {
+  margin-left: 8px;
+}
 
 .navigation-item-exit {
   margin-right: auto;
+}
+
+.navigation-item-compare {
+  margin-right: 8px;
 }
 
 .exit-icon {
@@ -204,9 +210,7 @@ body {
   margin: auto 0;
 }
 
-.navigation-item-compare {
-  margin-right: 6px;
-}
+
 
 .navigation-link {
   position: relative;
@@ -217,22 +221,34 @@ body {
   padding: 10px;
 }
 
-.navigation-exit-link {
-  padding-left: 29px;
+.navigation-link-user {
+  padding-left: 26px;
+  background-image: url("../images/user-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 12px;
+  background-position: 0 50%;
 }
 
 .navigation-compare-link {
-  padding-left: 24px;
+  padding-left: 22px;
+  background-image: url("../images/compare-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 12px;
+  background-position: 0 50%;
 }
 
 .navigation-basket-link {
-  padding-left: 45px;
-
+  padding-left: 43px;
+  background-image: url("../images/basket.svg");
+  background-repeat: no-repeat;
+  background-size: 31px 22px;
+  background-position: 0 50%;
 }
 
-.exit {
-  opacity: 0.3;
-  padding: 3px 3px;
+.navigation-exit-link {
+  color: rgba(0, 0, 0, 0.3);
+
+  /* padding: 3px 3px; */
 }
 
 .menu {
@@ -434,11 +450,11 @@ body {
 
 }
 
-.style-3:hover {
+.style-3:hover:not(.button-services-current) {
   background: rgba(255, 225, 127, 1);
 }
 
-.style-3:active {
+.style-3:active:not(.button-services-current) {
   background: rgba(255, 204, 51, 1);
 
 }
@@ -574,20 +590,20 @@ body {
   border-right: 1px black solid;
 }
 
-.services-list-item:not(:last-child) {
+.services-list-item {
   margin-bottom: 45px;
 }
 
 .button-services {
-  text-align: center;
-  width: 160px;
-  height: 40px;
+  width: 280px;
+  height: 41px;
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  text-align: start;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   cursor: pointer;
@@ -596,18 +612,17 @@ body {
   background-image: url("../images/bar-delivery-garanty-credit.svg");
   background-size: 160px 8px;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 0;
 }
 
 .button-services-current {
   width: 280px;
-  height: 40px;
+  height: 41px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-align: start;
-  padding-left: 15px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   border: none;
@@ -615,6 +630,18 @@ body {
   background-color: #000000;
   background-image: none;
   cursor: pointer;
+}
+
+.button-services-1 {
+  padding-left: 18px;
+}
+
+.button-services-2 {
+  padding-left: 21px;
+}
+
+.button-services-3 {
+  padding-left: 35px;
 }
 
 .services-container-inner {
@@ -1096,11 +1123,9 @@ body {
   outline-offset: -2px;
 }
 
-
 .services-page-footer-item-link:active {
   opacity: 0.6;
 }
-
 
 .footer-social-list {
   display: flex;
@@ -1412,17 +1437,16 @@ body {
   display: block;
 }
 
-.product-card-link:hover {
+.product-card-link:hover .product-card-over-container {
   opacity: 0.6;
 }
 
-.product-card-link:active {
+.product-card-link:active .product-card-over-container {
   opacity: 0.3;
 }
 
 .product-card-box {
   position: relative;
-
 }
 
 .product-card-image {
@@ -1560,11 +1584,27 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.3);
   background-color: inherit;
   text-decoration: none;
-  opacity: 0.3;
   cursor: pointer;
+}
+
+.pagination-link:focus-visible:not(.pagination-link-current) {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.pagination-link:hover:not(.pagination-link-current) {
+  color: rgba(68, 68, 68, 1)
+}
+
+.pagination-link:active:not(.pagination-link-current) {
+  color: rgba(68, 68, 68, 0.1)
+}
+
+.pagination-link.pagination-link-current {
+  color: rgba(68, 68, 68, 0.6);
 }
 
 .pagination-link-prev {
@@ -1605,6 +1645,23 @@ body {
   letter-spacing: 0.2em;
   cursor: pointer;
   text-decoration: none;
+}
+
+.pagination-link-current {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.pagination-link-side:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.pagination-link-side:hover:not(pagination-link-current) {
+  background: rgba(220, 220, 220, 1);
+}
+
+.pagination-link-side:active {
+  opacity: 0.3;
 }
 
 .visually-hidden {

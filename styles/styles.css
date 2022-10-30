@@ -351,11 +351,11 @@ body {
 
 .slider-button-container {
   display: flex;
+  justify-content: space-between;
   width: 530px;
   position: absolute;
   left: 30px;
-  top: 40%;
-  transform: translateY(-50%);
+  top: 34%;
 }
 
 .slider-button {
@@ -372,9 +372,6 @@ body {
   background-position: center;
 }
 
-.slider-prev {
-  margin-right: auto;
-}
 
 .slider-next {
   transform: rotate(180deg);
@@ -527,6 +524,10 @@ body {
   padding: 0;
   margin: 10px;
   cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  background: rgba(0, 0, 0, 1);
 }
 
 .product {

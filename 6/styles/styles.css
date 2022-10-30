@@ -92,6 +92,7 @@ body {
 }
 
 .search-input {
+  box-sizing: content-box;
   width: 309px;
   height: 36px;
   font-family: "Rubik", sans-serif;
@@ -351,24 +352,30 @@ body {
 
 .slider-button-container {
   display: flex;
+  justify-content: space-between;
   width: 530px;
   position: absolute;
   left: 30px;
-  top: 40%;
-  transform: translateY(-50%);
-
+  top: 34%;
 }
 
 .slider-button {
+  width: 20px;
+  height: 60px;
   padding: 10px;
   margin: 0;
-  border: 0;
+  border: none;
   background: inherit;
   cursor: pointer;
+  background-image: url("../images/slider-control-prev.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 60px;
+  background-position: center;
 }
 
-.slider-prev {
-  margin-right: auto;
+
+.slider-next {
+  transform: rotate(180deg);
 }
 
 .slider-list {
@@ -497,18 +504,31 @@ body {
 
 .slider-pagination {
   display: flex;
-  width: 76px;
-  margin: 0 auto 70px;
+  justify-content: center;
+  margin: 0 0 60px 0;
   padding: 0;
   list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.slider-pagination-item {
+  padding: 0;
+  margin: 0;
 }
 
 .slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
   background: inherit;
-  border: none;
-  padding: 8px;
-  margin: 2px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  padding: 0;
+  margin: 10px;
   cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  background: rgba(0, 0, 0, 1);
 }
 
 .product {
@@ -990,6 +1010,11 @@ body {
 .field:focus-visible {
   outline: none;
   background-color: rgba(220, 220, 220, 1);
+}
+
+.field:disabled,
+.field:disabled:hover {
+  opacity: 0.3;
 }
 
 .newsletter-button {

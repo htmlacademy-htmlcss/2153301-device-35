@@ -92,6 +92,7 @@ body {
 }
 
 .search-input {
+  box-sizing: content-box;
   width: 309px;
   height: 36px;
   font-family: "Rubik", sans-serif;
@@ -1009,6 +1010,11 @@ body {
 .field:focus-visible {
   outline: none;
   background-color: rgba(220, 220, 220, 1);
+}
+
+.field:disabled,
+.field:disabled:hover {
+  opacity: 0.3;
 }
 
 .newsletter-button {

@@ -84,7 +84,7 @@ body {
   margin: 0 27px 0 0;
 }
 
-.form-input-container:focus-within {
+ .form-input-container:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
   position: relative;
@@ -135,12 +135,12 @@ body {
   outline: none;
 }
 
-.search-button:hover {
+.search-button:hover:not(:disabled) {
   color: #FFFFFF;
   background-color: #000000;
 }
 
-.search-button:active span {
+.search-button:active:not(:disabled) span {
   opacity: 0.3;
 }
 
@@ -899,6 +899,19 @@ body {
   color: #444444;
 }
 
+.contacts-phone:hover {
+  opacity: 0.6;
+}
+
+.contacts-phone:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
+}
+
 .contacts-subtitle {
   margin: 0;
   margin-bottom: 15px;
@@ -1029,6 +1042,7 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
 }
 
 .style-2:hover {
@@ -1467,8 +1481,13 @@ body {
   opacity: 0.6;
 }
 
-.product-card-link:active .product-card-over-container {
-  opacity: 0.3;
+.product-card-link:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.product-card-link:active .product-card-button {
+  background-image: url("../images/button-after-click.svg");
 }
 
 .product-card-box {

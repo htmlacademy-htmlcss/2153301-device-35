@@ -73,6 +73,7 @@ body {
 }
 
 .navigation-search-container {
+  position: relative;
   display: flex;
   width: 1040px;
   margin: 46px auto 35px;
@@ -84,14 +85,14 @@ body {
   margin: 0 27px 0 0;
 }
 
- .form-input-container:focus-within {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
+
+ .form-input-container {
   position: relative;
-  z-index: 1;
 }
 
 .search-input {
+  position: relative;
+
   box-sizing: content-box;
   width: 309px;
   height: 36px;
@@ -114,8 +115,22 @@ body {
   background-position: center left 16px;
 }
 
+.search-input:focus-visible+.for-outline-input {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .search-input:disabled {
   opacity: 0.3;
+}
+
+.for-outline-input {
+  width: 361px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 
 .search-button {
@@ -135,12 +150,25 @@ body {
   outline: none;
 }
 
+.for-outline-button {
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.search-button:focus-visible+.for-outline-button {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .search-button:hover:not(:disabled) {
   color: #FFFFFF;
   background-color: #000000;
 }
 
-.search-button:active:not(:disabled) span {
+.search-button:active:not(:disabled) search-title {
   opacity: 0.3;
 }
 

@@ -86,7 +86,7 @@ body {
 }
 
 
- .form-input-container {
+.form-input-container {
   position: relative;
 }
 
@@ -115,7 +115,7 @@ body {
   background-position: center left 16px;
 }
 
-.search-input:focus-visible+.for-outline-input {
+.search-input:focus-visible + .for-outline-input {
 
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
@@ -164,7 +164,7 @@ body {
   pointer-events: none;
 }
 
-.search-button:focus-visible+.for-outline-button {
+.search-button:focus-visible + .for-outline-button {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
   z-index: 1;
@@ -547,23 +547,37 @@ body {
 }
 
 .slider-pagination-item {
+  width: 32px;
+  height: 32px;
   padding: 0;
   margin: 0;
 }
 
 .slider-pagination-button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+  width: 16px;
+  height: 16px;
   background: inherit;
-  border: 2px solid rgba(0, 0, 0, 1);
   padding: 0;
-  margin: 10px;
   cursor: pointer;
+  border: none;
+  background-image: url("../images/pagination.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .slider-pagination-button-current {
-  background: rgba(0, 0, 0, 1);
+  width: 16px;
+  height: 16px;
+  background: inherit;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-image: url("../images/pagination-current.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 }
 
 .product {

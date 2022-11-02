@@ -73,6 +73,7 @@ body {
 }
 
 .navigation-search-container {
+  position: relative;
   display: flex;
   width: 1040px;
   margin: 46px auto 35px;
@@ -84,14 +85,14 @@ body {
   margin: 0 27px 0 0;
 }
 
-.form-input-container:focus-within {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
+
+.form-input-container {
   position: relative;
-  z-index: 1;
 }
 
 .search-input {
+
+
   box-sizing: content-box;
   width: 309px;
   height: 36px;
@@ -114,8 +115,26 @@ body {
   background-position: center left 16px;
 }
 
-.search-input:disabled {
+.search-input:focus-visible + .for-outline-input {
+
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.search-input:disabled,
+.search-input:disabled:hover {
   opacity: 0.3;
+}
+
+.for-outline-input {
+
+  width: 361px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 
 .search-button {
@@ -133,14 +152,30 @@ body {
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
   outline: none;
+  cursor: pointer;
 }
 
-.search-button:hover {
+.for-outline-button {
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.search-button:focus-visible + .for-outline-button {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.search-button:hover:not(:disabled) {
   color: #FFFFFF;
   background-color: #000000;
 }
 
-.search-button:active span {
+.search-button:active:not(:disabled) .search-title {
   opacity: 0.3;
 }
 
@@ -512,6 +547,8 @@ body {
 }
 
 .slider-pagination-item {
+  width: 32px;
+  height: 32px;
   padding: 0;
   margin: 0;
 }
@@ -519,16 +556,27 @@ body {
 .slider-pagination-button {
   width: 12px;
   height: 12px;
-  border-radius: 50%;
   background: inherit;
-  border: 2px solid rgba(0, 0, 0, 1);
   padding: 0;
-  margin: 10px;
   cursor: pointer;
+  border: none;
+  background-image: url("../images/pagination.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .slider-pagination-button-current {
-  background: rgba(0, 0, 0, 1);
+  width: 12px;
+  height: 12px;
+  background: inherit;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-image: url("../images/pagination-current.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .product {
@@ -899,6 +947,19 @@ body {
   color: #444444;
 }
 
+.contacts-phone:hover {
+  opacity: 0.6;
+}
+
+.contacts-phone:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
+}
+
 .contacts-subtitle {
   margin: 0;
   margin-bottom: 15px;
@@ -1029,6 +1090,7 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  cursor: pointer;
 }
 
 .style-2:hover {
@@ -1327,12 +1389,139 @@ body {
 .filter-form {
   width: 200px;
   margin: 0 auto;
+  padding: 0;
 }
 
-.catalog-filter-group-color {
-  min-height: 255px;
+.catalog-filter-group {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 52px;
+  border: none;
+  border-top: 2px solid rgba(0, 0, 0, 1);
+}
+
+.catalog-filter-group:first-child {
+  padding-top: 62px;
+}
+
+.catalog-filter-title {
+  position: absolute;
+  top: 12px;
+}
+
+.range {
+  margin: 0;
+
+  padding: 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: rgba(220, 220, 220, 1);
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(235, 235, 235, 1);
+  outline: none;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -8px;
+}
+
+.range-toggle-for-outline {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  pointer-events: none;
+}
+
+.range-toggle:focus-visible + .range-toggle-for-outline {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+  border: none;
+}
+
+.range-toggle:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.range-toggle:active {
+  background: rgba(0, 0, 0, 1);
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin-bottom: 37px;
+}
+
+.catalog-filter-label {
+  position: relative;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.range-input {
+  width: 74px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+}
+
+.range-input-for-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 20px;
+  pointer-events: none;
+
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input:focus-visible+.range-input-for-outline {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
 }
 
 .catalog-filter-list {
@@ -1348,6 +1537,31 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  margin-bottom: 17px;
+}
+
+.control-input-for-outline {
+  position: absolute;
+  
+}
+
+.control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 3px;
+}
+
+.control-input:focus-visible+.control-input-for-outline {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
 }
 
 .catalog-filter-group-bluetooth {
@@ -1467,8 +1681,13 @@ body {
   opacity: 0.6;
 }
 
-.product-card-link:active .product-card-over-container {
-  opacity: 0.3;
+.product-card-link:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+}
+
+.product-card-link:active .product-card-button {
+  background-image: url("../images/button-after-click.svg");
 }
 
 .product-card-box {

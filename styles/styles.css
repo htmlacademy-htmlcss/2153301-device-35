@@ -1417,15 +1417,22 @@ body {
   border-radius: 50%;
   cursor: pointer;
   background: rgba(235, 235, 235, 1);
+  outline: none;
 }
 
 .range-toggle-for-outline {
-  
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 
-.range-toggle:focus-visible {
+.range-toggle:focus-visible+.range-toggle-for-outline {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
+  border: none;
 }
 
 .range-toggle:hover {

@@ -1454,8 +1454,8 @@ body {
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -8px;
+  left: -8px;
   pointer-events: none;
 }
 
@@ -1479,16 +1479,18 @@ body {
 }
 
 .catalog-filter-label {
+  position: relative;
   color: rgba(0, 0, 0, 0.5);
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px
+  line-height: 20px;
+  margin-right: 10px;
 }
 
 .range-input {
-  width: 84px;
+  width: 74px;
   border: none;
   background: transparent;
   padding: 0;
@@ -1497,13 +1499,29 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px
+  line-height: 20px;
+  outline: none;
+}
+
+.range-input-for-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 20px;
+  pointer-events: none;
+
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range-input:focus-visible+.range-input-for-outline {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
 }
 
 .catalog-filter-list {
@@ -1519,6 +1537,31 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  margin-bottom: 17px;
+}
+
+.control-input-for-outline {
+  position: absolute;
+  
+}
+
+.control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 3px;
+}
+
+.control-input:focus-visible+.control-input-for-outline {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
 }
 
 .catalog-filter-group-bluetooth {

@@ -1519,7 +1519,7 @@ body {
   margin: 0;
 }
 
-.range-input:focus-visible+.range-input-for-outline {
+.range-input:focus-visible + .range-input-for-outline {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -1545,7 +1545,7 @@ body {
 
 .control-input-for-outline {
   position: absolute;
-  
+
 }
 
 .control-mark {
@@ -1559,7 +1559,7 @@ body {
   border-radius: 3px;
 }
 
-.control-input:focus-visible+.control-input-for-outline {
+.control-input:focus-visible + .control-input-for-outline {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }

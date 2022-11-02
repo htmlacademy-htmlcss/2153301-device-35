@@ -1420,6 +1420,16 @@ body {
   outline: none;
 }
 
+.toggle-min {
+  top: -8px;
+  left: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -8px;
+}
+
 .range-toggle-for-outline {
   width: 18px;
   height: 18px;
@@ -1429,7 +1439,7 @@ body {
   pointer-events: none;
 }
 
-.range-toggle:focus-visible+.range-toggle-for-outline {
+.range-toggle:focus-visible + .range-toggle-for-outline {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
   border: none;
@@ -1443,6 +1453,16 @@ body {
   background: rgba(0, 0, 0, 1);
 }
 
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
 
 .catalog-filter-list {
   margin: 0;

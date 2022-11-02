@@ -1389,17 +1389,37 @@ body {
 .filter-form {
   width: 200px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .catalog-filter-group {
+  position: relative;
   margin: 0;
+  padding: 0;
+  padding-top: 52px;
+  border: none;
+  border-top: 2px solid rgba(0, 0, 0, 1);
+}
+
+.catalog-filter-group:first-child {
+  padding-top: 62px;
+}
+
+.catalog-filter-title {
+  position: absolute;
+  top: 12px;
+}
+
+.range {
+  margin: 0;
+
   padding: 0;
 }
 
 .range-scale {
   position: relative;
   height: 2px;
-  margin-bottom: 3px;
+  margin-bottom: 11px;
   background-color: rgba(220, 220, 220, 1);
 }
 
@@ -1455,7 +1475,29 @@ body {
 
 .range-wrapper-inputs {
   display: flex;
-  justify-content: center;
+  margin-bottom: 37px;
+}
+
+.catalog-filter-label {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px
+}
+
+.range-input {
+  width: 84px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px
 }
 
 .range-input::-webkit-outer-spin-button,

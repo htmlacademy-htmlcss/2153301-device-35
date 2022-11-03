@@ -1376,7 +1376,19 @@ body {
 
 .filter-title {
   display: inline-block;
-  margin: 25px 168px 60px 60px;
+  margin: 25px 166px 60px 60px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.filter-title-sort {
+  display: inline-block;
+  margin: 25px 197px 25px 40px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1692,20 +1704,22 @@ body {
 }
 
 .sort-header {
+  display: flex;
+  align-items: center;
   background-color: #F0F0F0;
   color: #000000;
 }
 
-.filter-title {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
+.select-control-title {
+  position: relative;
+  margin-right: auto;
+  width: 141px;
+  height: 30px;
 }
 
 .select-control {
+  width: 100%;
+  height: 100%;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1713,6 +1727,82 @@ body {
   line-height: 30px;
   background-color: #F0F0F0;
   color: #000000;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.select-control-for-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.select-control:focus-visible + .select-control-for-outline {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:disabled {
+  opacity: 0.1;
+}
+
+.button-sort-container {
+  display: flex;
+  margin-right: 40px;
+  height: 30px;
+}
+
+.top-bottom {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin:  0;
+  border: none;
+  cursor: pointer;
+}
+
+.top-bottom:hover .polygon-top-bottom {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.top-bottom:active .polygon-top-bottom {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.top-bottom:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+  z-index: 1;
+}
+/*
+.top {
+  background-image: url("../images/sort.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 11px 10px;
+}
+
+.bottom {
+  background-image: url("../images/sort.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 11px 10px;
+  transform: rotate(-180deg)
+} */
+
+.polygon-top-bottom {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .product-pagination {

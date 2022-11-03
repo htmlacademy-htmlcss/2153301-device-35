@@ -191,7 +191,8 @@
                 <ul class="catalog-filter-list">
                   <li class="bluetooth-filter-item">
                     <label class="control-radio">
-                      <input type="radio" class="control-input-bluetooth visually-hidden" name="bluetooth" value="yes" checked>
+                      <input type="radio" class="control-input-bluetooth visually-hidden" name="bluetooth" value="yes"
+                        checked>
                       <span class="bluetooth-mark mark"></span><span class="mark">Есть</span>
                       <span class="bluetooth-input-for-outline"></span>
                     </label>
@@ -211,22 +212,29 @@
 
           <div class="catalog-right-column">
             <div class="sort-header">
-              <h3 class="filter-title">сортировка:</h3>
+              <h3 class="filter-title-sort">сортировка:</h3>
               <label class="select-control-title">
                 <select class="select-control">
                   <option value="popular">Дорогие</option>
                   <option value="cheap">Дешёвые</option>
                   <option value="expensive" selected>Популярные</option>
                 </select>
+                <span class="select-control-for-outline"></span>
               </label>
-              <button class="top" type="button">
-                <span class="visually-hidden">по возрастанию</span>
-                <img src="images/button-up.svg" width="11" height="10" alt="прокрутка товаров вверх">
-              </button>
-              <button class="bottom" type="button">
-                <span class="visually-hidden">по убыванию</span>
-                <img src="images/button-bottom.svg" width="11" height="10" alt="прокрутка товаров вниз">
-              </button>
+              <div class="button-sort-container">
+                <button class="top-bottom top" type="button">
+                  <svg class="polygon-top-bottom"  aria-hidden="true" focusable="false" width="10px" height="10px" viewBox="0 0 10 10">
+                    <polygon points="0,10 5,0 10,10" fill="color"/>
+                  </svg>
+                  <span class="visually-hidden">по возрастанию</span>
+                </button>
+                <button class="top-bottom bottom" type="button">
+                  <svg class="polygon-top-bottom"  aria-hidden="true" focusable="false" width="10px" height="10px" viewBox="0 0 10 10">
+                    <polygon points="0,0 10,0 5,10" fill="color"/>
+                  </svg>
+                  <span class="visually-hidden">по убыванию</span>
+                </button>
+              </div>
             </div>
             <section class="product-pagination">
               <h3 class="visually-hidden">Список товаров с кнопками пагинации</h3>

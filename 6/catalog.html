@@ -122,13 +122,13 @@
                         <button class="range-toggle toggle-min">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
-                        <span class="range-toggle-for-outline"></span>
+                        <span class="range-toggle-for-outline range-toggle-for-outline-min"></span>
                       </div>
                       <div class="button-container">
                         <button class="range-toggle toggle-max">
                           <span class="visually-hidden">Изменить максимальную цену.</span>
                         </button>
-                        <span class="range-toggle-for-outline"></span>
+                        <span class="range-toggle-for-outline range-toggle-for-outline-max"></span>
                       </div>
                     </div>
                   </div>
@@ -153,32 +153,36 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input type="checkbox" class="control-input visually-hidden" name="black" checked>
+                      <span class="control-mark mark"></span><span class="mark">Черный</span>
                       <span class="control-input-for-outline"></span>
-                      <span class="control-mark"></span>Черный
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input type="checkbox" class="control-input visually-hidden" name="white" checked>
-                      <span class="control-mark"></span>Белый
+                      <span class="control-mark mark"></span><span class="mark">Белый</span>
+                      <span class="control-input-for-outline"></span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input type="checkbox" class="control-input visually-hidden" name="blue">
-                      <span class="control-mark"></span>Синий
+                      <span class="control-mark mark"></span><span class="mark">Синий</span>
+                      <span class="control-input-for-outline"></span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input type="checkbox" class="control-input visually-hidden" name="red">
-                      <span class="control-mark"></span>Красный
+                      <span class="control-mark mark"></span><span class="mark">Красный</span>
+                      <span class="control-input-for-outline"></span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input type="checkbox" class="control-input visually-hidden" name="pink">
-                      <span class="control-mark"></span>Розовый
+                      <span class="control-mark mark"></span><span class="mark">Розовый</span>
+                      <span class="control-input-for-outline"></span>
                     </label>
                   </li>
                 </ul>
@@ -186,16 +190,18 @@
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Bluetooth</legend>
                 <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input type="radio" class="control-input" name="Bluetooth" value="yes" checked>
-                      Есть
+                  <li class="bluetooth-filter-item">
+                    <label class="control-radio">
+                      <input type="radio" class="control-input-bluetooth visually-hidden" name="bluetooth" value="yes" checked>
+                      <span class="bluetooth-mark mark"></span><span class="mark">Есть</span>
+                      <span class="bluetooth-input-for-outline"></span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input type="radio" class="control-input" name="Bluetooth" value="no">
-                      Нет
+                    <label class="control-radio">
+                      <input type="radio" class="control-input-bluetooth visually-hidden" name="bluetooth" value="no">
+                      <span class="bluetooth-mark mark"></span><span class="mark">Нет</span>
+                      <span class="bluetooth-input-for-outline"></span>
                     </label>
                   </li>
                 </ul>

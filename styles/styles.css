@@ -207,6 +207,10 @@ body {
   flex-wrap: wrap;
 }
 
+.navigation-item {
+  position: relative;
+}
+
 .navigation-item-exit {
   margin-left: 8px;
 }
@@ -281,6 +285,36 @@ body {
   background-position: 0 50%;
 }
 
+.popover {
+  width: 320px;
+  min-height: 134px;
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  font-style: regular;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 40px;
+  right: -80px;
+  z-index: 1;
+  box-sizing: border-box;
+
+}
+
+.popover-close-button {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 126px;
+  height: 42px;
+  box-sizing: border-box;
+  background-color: inherit;
+}
+
 .navigation-exit-link {
   color: rgba(0, 0, 0, 0.3);
 
@@ -336,6 +370,14 @@ body {
   padding: 15px 70px 15px 0;
 }
 
+.subcatalog {
+  display: none;
+}
+
+.menu-item-catalog-link:focus-within + .subcatalog {
+  display: block;
+}
+
 .circle {
   position: absolute;
   right: 0;
@@ -358,6 +400,8 @@ body {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
+
+
 
 .style-6:active .circle {
   opacity: 1;
@@ -1767,7 +1811,7 @@ body {
   width: 30px;
   height: 30px;
   padding: 0;
-  margin:  0;
+  margin: 0;
   border: none;
   cursor: pointer;
 }
@@ -1785,6 +1829,7 @@ body {
   outline-offset: 2px;
   z-index: 1;
 }
+
 /*
 .top {
   background-image: url("../images/sort.svg");

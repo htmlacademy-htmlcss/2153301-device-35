@@ -40,14 +40,50 @@
             <li class="navigation-item navigation-item-compare">
               <a class="navigation-link navigation-compare-link style-1" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item-basket">
               <a class="navigation-link navigation-basket-link style-1" href="#">Корзина</a>
-              <div class="popover-close-button"></div>
               <div class="popover popover-cart">
                 <div class="popover-content">
                   <h2 class="popover-title visually-hidden">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <a class="cart-item-container style-1" href="#">
+                        <img class="cart-item-image" src="images/amateur-selfie-stick.jpg" width="39" height="43"
+                          alt="Любительская селфи-палка">
+                        <span class="cart-item-title">Любительская селфи-палка</span>
+                      </a>
+                      <button type="button" class="cart-item-button style-1"></button>
+                    </li>
+                    <li class="cart-item">
+                      <a class="cart-item-container  style-1" href="#">
+                        <img class="cart-item-image" src="images/professional-selfie-stick.jpg" width="39" height="43"
+                          alt="Профессиональная
+                      селфи-палка">
+                        <span class="cart-item-title">Профессиональная
+                          селфи-палка</span>
+                      </a>
+                      <button type="button" class="cart-item-button style-1"></button>
+                    </li>
+                  </ul>
+                  <div class="cart-price-box-container">
+                    <div class="cart-price-box">
+                      <div class="cart-price-subbox">Товаров:
+                        <span class="cart-price-subbox-value">2</span>
+                      </div>
+                      <div class="cart-price-subbox">Сумма:
+                        <span class="cart-price-subbox-value">2000 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popover-open-basket">
+                    <button class="popover-open-basket-button" type="button">открыть корзину</button>
+                  </div>
                 </div>
               </div>
+              <svg class="polygon-for-popover" aria-hidden="true" focusable="false" width="14px" height="6px"
+                viewBox="0 0 14 6">
+                <polygon points="0,6 7,0 14,6" fill="color" />
+              </svg>
             </li>
           </ul>
         </nav>
@@ -56,8 +92,8 @@
       <div class="menu">
         <ul class="menu-list">
           <li class="menu-item menu-item-catalog">
-            <a class="menu-item-link menu-item-catalog-link style-6 " href="#">
-              <h2 class="menu-title">Каталог товаров</h2>
+            <button class="menu-item-link menu-item-catalog-link style-6 ">
+              <span class="menu-title">Каталог товаров</span>
               <svg class="circle circle-plus" aria-hidden="true" focusable="false" width="50" height="50"
                 viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" />
@@ -78,14 +114,17 @@
                 </g>
               </svg>
 
-            </a>
+            </button>
             <ul class="subcatalog">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
+
+              <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Фитнес-браслеты</a></li>
+              <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Квадрокоптеры</a></li>
+              <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Моноподы для селфи</a></li>
+              <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Умные часы</a></li>
+              <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#"></a></li>
+              <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Экшн-камеры</a></li>
             </ul>
           </li>
           <li class="menu-item menu-item-delivery">
@@ -441,6 +480,37 @@
       </div>
     </footer>
 
+    <form class="modal-container" method="post">
+      <fieldset class="modal-subcontainer">
+        <section class="modal modal-order">
+          <legend class="modal-title">Доставка под заказ</legend>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <label class="your-name label-modal-style"><span class="modal-title-input">Ваше имя:</span>
+            <input class="input-modal-style input-modal-style-name" type="text" placeholder="Введите имя">
+          </label>
+
+          <label class="your-email label-modal-style"><span class="modal-title-input">Ваш e-mail:</span>
+            <input class="input-modal-style input-modal-style-email" type="email" placeholder="Введите e-mail">
+          </label>
+
+          <label class="your-order label-modal-style"><span class="modal-title-input">Что нужно привезти:</span>
+            <input class=" input-modal-style" type="text" placeholder="В свободной форме">
+          </label>
+
+          <label class="count-label label-modal-style"><span class="modal-title-input">Количество:</span>
+             <div class="count-label-box">
+              <button class="minus-count button-count count-style" type="button"></button>
+              <input class="count-input  count-style" type="number">
+              <button class="plus-count button-count  count-style" type="button"></button>
+             </div>
+          </label>
+
+        </section>
+      </fieldset>
+
+    </form>
 
   </body>
 

@@ -607,8 +607,8 @@ body {
   background: linear-gradient(to top, white 75%, #FFE17F 25%);
 }
 
-.slider-item:nth-child(2),
-.slider-item:nth-child(3) {
+.slider-item:nth-child(1),
+.slider-item:nth-child(2) {
   display: none;
 }
 
@@ -1363,6 +1363,17 @@ body {
 .footer-content-address {
   width: 239px;
   margin: 0;
+  position: relative;
+}
+
+.footer-content-address:after {
+  content: "";
+  position: absolute;
+  top: 104px;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background: rgba(255, 199, 0, 1);
 }
 
 .services-page-footer {

@@ -844,6 +844,7 @@ body {
   width: 160px;
   min-height: 60px;
   display: block;
+  letter-spacing: -2%;
 }
 
 .services {
@@ -861,15 +862,17 @@ body {
 
 .services-list {
   width: 280px;
-  min-height: 191px;
+  /* min-height: 191px; */
+  height: 191px;
   padding: 64px 0;
   margin: 0;
   list-style-type: none;
-  border-right: 1px black solid;
+  border-right: 7px black solid;
+
 }
 
 .services-list-item {
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 }
 
 .button-services {
@@ -1058,10 +1061,12 @@ body {
 
 .about-us {
   width: 520px;
+  padding-top: 47px;
 }
 
 .contacts {
   width: 532px;
+  padding-top: 47px;
 }
 
 .about-us-contacts-container {
@@ -1069,6 +1074,7 @@ body {
   justify-content: space-between;
   margin: 0 auto 70px;
   width: 1160px;
+  position: relative;
 }
 
 .about-us-contacts-title {
@@ -1082,6 +1088,15 @@ body {
   line-height: 50px;
 }
 
+.about-us-contacts-title::before {
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0;
+}
+
 .about-us-content {
   margin: 0;
   margin-bottom: 30px;
@@ -1093,8 +1108,8 @@ body {
 
 .delivery-company {
   margin: 0;
-  margin-bottom: 40px;
-  padding-left: 35px;
+  margin-bottom: 36px;
+  padding-left: 37px;
   list-style-type: none;
 }
 
@@ -1116,8 +1131,8 @@ body {
   content: "";
   display: inline-block;
   position: absolute;
-  bottom: 7px;
-  left: -30px;
+  bottom: 6px;
+  left: -35px;
   background: url("../images/yellowball.svg");
   background-size: 8px 8px;
   width: 8px;
@@ -1183,7 +1198,7 @@ body {
 
 .contacts-schedule {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   padding: 0;
   list-style-type: none;
 }
@@ -1228,7 +1243,8 @@ body {
 .newsletter-container {
   width: 1160px;
   min-height: 301px;
-  margin: 64px auto 56px;
+  margin: 69px auto 56px;
+
 }
 
 .newsletter-block {
@@ -1247,6 +1263,8 @@ body {
   line-height: 50px;
   color: #000000;
   background-color: inherit;
+  position: relative;
+  left: 6px;
 }
 
 .newsletter-title-content {
@@ -1256,6 +1274,9 @@ body {
   min-height: 90px;
   color: #444444;
   background-color: inherit;
+  position: relative;
+  left: 6px;
+  top: 9px;
 }
 
 .subscribe {
@@ -1268,8 +1289,8 @@ body {
 
 .field {
   margin: 0;
-  padding: 0 0 0 11px;
-  width: 557px;
+  padding: 0 0 0 16px;
+  width: 541px;
   height: 54px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -1293,7 +1314,7 @@ body {
 }
 
 .newsletter-button {
-  width: 251px;
+  width: 253px;
   height: 57px;
   padding: 0;
   border: #C4C4C4 solid 3px;
@@ -1325,7 +1346,7 @@ body {
 
 .newsletter-free {
   display: block;
-  margin: auto 0 auto auto;
+  margin: auto 1px auto auto;
   padding-left: 32px;
   color: #444444;
   background-color: #F0F0F0;

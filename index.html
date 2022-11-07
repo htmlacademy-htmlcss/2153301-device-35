@@ -482,9 +482,9 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-container-close ">
+      <form class="modal-subcontainer" method="post">
 
-    <form class="modal-container modal-container-close" method="post">
-      <div class="modal-subcontainer">
         <div class="modal modal-order">
           <h2 class="modal-title">Доставка под заказ</h2>
           <button class="modal-close-button" type="button">
@@ -502,7 +502,25 @@
             <input class=" input-modal-style" type="text" placeholder="В свободной форме">
           </label>
 
-          <div class="count-label label-modal-style"><span class="modal-title-input">Количество:</span>
+          <div class="count-label label-modal-style"><span class="modal-title-input for-tooltip-icon">Количество:<span class="tooltip"><button class="tooltip-toggle"
+                  type="button" aria-labelledby="tooltip-label-date"><svg class="attention-tooltip" aria-hidden="true" focusable="false" width="2"
+                    height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#d)" fill="#000">
+                      <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="d">
+                        <path fill="#fff" d="M0 0h2v12H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg></button>
+                <span class="container-svg-span-modal"><svg class="polygon-for-tooltip-text" aria-hidden="true"
+                    focusable="false" width="14px" height="6px" viewBox="0 0 14 6">
+                    <polygon points="0,6 7,0 14,6" fill="color" />
+                  </svg><span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно. Привезём сколько получится
+                    по требованиям
+                    к провозу багажа.</span></span>
+              </span></span>
             <div class="count-label-box">
               <button class="minus-count button-count count-style" type="button"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="2" fill="none" viewBox="0 0 16 2">
@@ -519,10 +537,10 @@
           <button class="button-popover-submit style-3" type="submit"><span
               class="button-popover-submit-span">отправить</span></button>
         </div>
-      </div>
 
-    </form>
 
+      </form>
+    </div>
   </body>
 
 </html>

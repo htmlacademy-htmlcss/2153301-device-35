@@ -46,6 +46,15 @@ body {
 
 .page-header {
   width: 1160px;
+  min-height: 300px;
+  margin: 40px auto 0 auto;
+  position: relative;
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+.page-header-catalog {
+  width: 1160px;
   min-height: 186px;
   margin: 40px auto 0 auto;
   position: relative;
@@ -443,6 +452,7 @@ body {
   width: 1040px;
   list-style-type: none;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .menu-item-catalog {
@@ -481,11 +491,15 @@ body {
 }
 
 .menu-item-delivery {
-  margin-right: 47px;
+  margin-right: 23px;
 }
 
 .menu-item-garanty {
-  margin-right: 51px;
+  margin-right: 28px;
+}
+
+.menu-item-contacts {
+  margin-right: -3px;
 }
 
 .menu-item-link {
@@ -566,7 +580,7 @@ body {
 .slider {
   position: relative;
   width: 1160px;
-  min-height: 560px;
+  min-height: 481px;
   margin: 0 auto;
 }
 
@@ -576,7 +590,7 @@ body {
   width: 530px;
   position: absolute;
   left: 30px;
-  top: 34%;
+  top: 61px;
 }
 
 .slider-button {
@@ -599,11 +613,13 @@ body {
 }
 
 .slider-list {
+  position: absolute;
+  top: -133px;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
-  background: linear-gradient(to top, white 75%, #FFE17F 25%);
+  background: inherit;
 }
 
 .slider-item:nth-child(3),
@@ -617,7 +633,9 @@ body {
 }
 
 .slider-image {
-  margin-top: -16px;
+  position: relative;
+  top: -17px;
+  left: 0;
 }
 
 .slider-content {
@@ -629,17 +647,19 @@ body {
 
 .number-product {
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
   color: #FFFFFF;
-  background-color: #FFE17F;
+  background-color: inherit;
   margin-left: 299px;
   padding-top: 75px;
+  position: relative;
+  top: -8px;
 }
 
 .advantages-description-title {
+  position: relative;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -653,7 +673,7 @@ body {
   color: #444444;
   background-color: #FFFFFF;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
 }
 
 .button-1 {
@@ -667,6 +687,7 @@ body {
   text-decoration: none;
   padding: 10px;
   margin: 0;
+  margin-bottom: 32px;
   width: 220px;
   height: 40px;
   cursor: pointer;
@@ -719,13 +740,16 @@ body {
 }
 
 .detail-list-container:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 21px;
 }
 
 .slider-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-41%);
   display: flex;
   justify-content: center;
-  margin: 0 0 60px 0;
   padding: 0;
   list-style-type: none;
   flex-wrap: wrap;
@@ -800,7 +824,7 @@ body {
 
 .list-product-item-img {
   background: #FFE17F;
-  margin-bottom: 33px;
+  margin-bottom: 26px;
 }
 
 .style-4:hover .image-1 {

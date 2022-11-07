@@ -94,7 +94,7 @@
           <li class="menu-item menu-item-catalog">
             <button class="menu-item-link menu-item-catalog-link style-6 ">
               <span class="menu-title">Каталог товаров</span>
-              <svg class="circle circle-plus" aria-hidden="true" focusable="false" width="50" height="50"
+              <svg class="circle circle-plus circle-current" aria-hidden="true" focusable="false" width="50" height="50"
                 viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" />
                 <g clip-path="url(#b)">
@@ -484,9 +484,9 @@
     </footer>
 
     <form class="modal-container modal-container-close" method="post">
-      <fieldset class="modal-subcontainer">
-        <section class="modal modal-order">
-          <legend class="modal-title">Доставка под заказ</legend>
+      <div class="modal-subcontainer">
+        <div class="modal modal-order">
+          <h2 class="modal-title">Доставка под заказ</h2>
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
@@ -502,18 +502,24 @@
             <input class=" input-modal-style" type="text" placeholder="В свободной форме">
           </label>
 
-          <label class="count-label label-modal-style"><span class="modal-title-input">Количество:</span>
+          <div class="count-label label-modal-style"><span class="modal-title-input">Количество:</span>
             <div class="count-label-box">
-              <button class="minus-count button-count count-style" type="button"></button>
-              <input class="count-input  count-style" type="number">
-              <button class="plus-count button-count  count-style" type="button"></button>
+              <button class="minus-count button-count count-style" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="2" fill="none" viewBox="0 0 16 2">
+                  <path fill="#000" d="M16 0H0v2h16V0Z" />
+                </svg></button>
+              <input class="count-input input-modal-style count-style" type="number">
+              <button class="plus-count button-count count-style" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path fill="#000" d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
+                </svg></button>
             </div>
-          </label>
+          </div>
 
           <button class="button-popover-submit style-3" type="submit"><span
               class="button-popover-submit-span">отправить</span></button>
-        </section>
-      </fieldset>
+        </div>
+      </div>
 
     </form>
 

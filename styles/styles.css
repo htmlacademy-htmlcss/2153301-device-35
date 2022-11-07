@@ -427,8 +427,6 @@ body {
 
 .navigation-exit-link {
   color: rgba(0, 0, 0, 0.3);
-
-  /* padding: 3px 3px; */
 }
 
 .menu {
@@ -2315,10 +2313,10 @@ body {
   width: 920px;
 }
 
-/*
+
 .modal-container-close {
   display: none;
-}*/
+}
 
 .modal-subcontainer {
   border: none;
@@ -2335,7 +2333,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
   margin: 0;
   padding: 0;
-
+  border: none;
 }
 
 .modal-title {
@@ -2360,6 +2358,7 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+
   background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
 }
@@ -2405,6 +2404,29 @@ body {
   font-weight: 400;
 }
 
+.input-modal-style:hover:not(:disabled) {
+  background-color: rgba(220, 220, 220, 1);
+}
+
+.input-modal-style:active:not(:disabled) {
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.input-modal-style:focus-visible:not(:disabled) {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.input-modal-style:disabled {
+  opacity: 0.3;
+}
+
+.input-modal-style:invalid {
+  border: 2px solid rgba(255, 61, 61, 1);
+}
+
+
 .input-modal-style-name {
   background-image: url("../images/your-name-icon.svg");
   background-repeat: no-repeat;
@@ -2440,6 +2462,34 @@ body {
   margin: 0;
 }
 
+.button-count:hover:not(:disabled) {
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.button-count:hover:not(:disabled) svg {
+  opacity: 0.6;
+}
+
+.button-count:active:not(:disabled) {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.button-count:active:not(:disabled) svg {
+  opacity: 0.3;
+}
+
+.button-count:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.button-count:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+
 .count-input {
   outline: none;
   text-align: center;
@@ -2448,21 +2498,6 @@ body {
 .button-count {
   cursor: pointer;
 }
-
-.minus-count {
-  background-image: url("../images/button-count-minus.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 16px 2px;
-}
-
-.plus-count {
-  background-image: url("../images/button-count-plus.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 16px 16px;
-}
-
 
 .count-input::-webkit-outer-spin-button,
 .count-input::-webkit-inner-spin-button {
@@ -2486,18 +2521,6 @@ body {
   background-size: 200px 8px;
   cursor: pointer;
 }
-/*
-.button-popover-submit:hover {
-  background-color: rgba(255, 225, 127, 1);
-}
-
-.button-popover-submit:active {
-  background-color: rgba(255, 204, 51, 1);
-}
-
-.button-popover-submit:active {
-
-} */
 
 .button-popover-submit-span {
   font-family: "Raleway", sans-serif;

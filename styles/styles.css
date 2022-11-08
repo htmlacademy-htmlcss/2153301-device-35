@@ -1433,7 +1433,7 @@ body {
 
 .logo-html-academy {
   display: block;
-  margin: 0 0 65px 60px;
+  margin: 0 0 65px 75px;
 }
 
 .footer-content-address {
@@ -1541,7 +1541,10 @@ body {
 
 .contacts-phone-footer {
   display: block;
-  margin-bottom: 69px;
+
+  margin-bottom: 55px;
+  padding: 7px 0 7px 14px;
+  padding-right: 0;
   color: #FFFFFF;
 }
 
@@ -1691,7 +1694,7 @@ body {
   border-top: 2px solid rgba(0, 0, 0, 1);
 }
 
-.catalog-filter-group:first-child {
+.catalog-filter-group:first-of-type {
   padding-top: 60px;
 }
 
@@ -2164,6 +2167,7 @@ body {
 }
 
 .product-card-title {
+  width: 201px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 700;

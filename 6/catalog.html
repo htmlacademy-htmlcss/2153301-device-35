@@ -11,7 +11,7 @@
 
 
   <body>
-    <header class="page-header">
+    <header class="page-header-catalog">
       <h2 class="visually-hidden">Интернет-магазин "Девайс"</h2>
       <a class="device-logo style-1" href="index.html"><img src="images/device-logo.svg" width="145" height="36"
           alt="логотип девайс"></a>
@@ -37,16 +37,59 @@
             <li class="navigation-item navigation-item-compare">
               <a class="navigation-link navigation-compare-link style-1" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item  navigation-item-basket">
               <a class="navigation-link navigation-basket-link style-1" href="#">Корзина</a>
+              <span class="basket-amount">2</span>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="popover-title visually-hidden">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <a class="cart-item-container style-1" href="#">
+                        <img class="cart-item-image" src="images/amateur-selfie-stick.jpg" width="39" height="43"
+                          alt="Любительская селфи-палка">
+                        <span class="cart-item-title">Любительская селфи-палка</span>
+                      </a>
+                      <button type="button" class="cart-item-button style-1"></button>
+                    </li>
+                    <li class="cart-item">
+                      <a class="cart-item-container  style-1" href="#">
+                        <img class="cart-item-image" src="images/professional-selfie-stick.jpg" width="39" height="43"
+                          alt="Профессиональная
+                      селфи-палка">
+                        <span class="cart-item-title">Профессиональная
+                          селфи-палка</span>
+                      </a>
+                      <button type="button" class="cart-item-button style-1"></button>
+                    </li>
+                  </ul>
+                  <div class="cart-price-box-container">
+                    <div class="cart-price-box">
+                      <div class="cart-price-subbox">Товаров:
+                        <span class="cart-price-subbox-value">2</span>
+                      </div>
+                      <div class="cart-price-subbox">Сумма:
+                        <span class="cart-price-subbox-value">2000 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popover-open-basket">
+                    <button class="popover-open-basket-button" type="button">открыть корзину</button>
+                  </div>
+                </div>
+              </div>
+              <svg class="polygon-for-popover" aria-hidden="true" focusable="false" width="14px" height="6px"
+                viewBox="0 0 14 6">
+                <polygon points="0,6 7,0 14,6" fill="color" />
+              </svg>
             </li>
           </ul>
         </nav>
       </div>
       <ul class="menu-list">
         <li class="menu-item menu-item-catalog">
-          <a class="menu-item-link menu-item-catalog-link style-6 " href="#">
-            <h2 class="menu-title">Каталог товаров</h2>
+          <button class="menu-item-link menu-item-catalog-link style-6 ">
+            <span class="menu-title">Каталог товаров</span>
             <svg class="circle circle-plus" aria-hidden="true" focusable="false" width="50" height="50"
               viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" />
@@ -67,7 +110,19 @@
               </g>
             </svg>
 
-          </a>
+          </button>
+          <ul class="subcatalog">
+
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Виртуальная реальность</a></li>
+
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Фитнес-браслеты</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Квадрокоптеры</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="catalog.html">Моноподы для селфи</a></li>
+
+            <li class="subcatalog-item subcatalog-item-watch"><a class="subcatalog-item-link style-1" href="#">Умные часы</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Экшн-камеры</a></li>
+          </ul>
+
         </li>
         <li class="menu-item menu-item-delivery">
           <a class="menu-item-link style-1" href="#">
@@ -179,7 +234,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control control-last">
                       <input type="checkbox" class="control-input visually-hidden" name="pink">
                       <span class="control-mark mark"></span><span class="mark">Розовый</span>
                       <span class="control-input-for-outline"></span>
@@ -192,7 +247,8 @@
                 <ul class="catalog-filter-list">
                   <li class="bluetooth-filter-item">
                     <label class="control-radio">
-                      <input type="radio" class="control-input-bluetooth visually-hidden" name="bluetooth" value="yes" checked>
+                      <input type="radio" class="control-input-bluetooth visually-hidden" name="bluetooth" value="yes"
+                        checked>
                       <span class="bluetooth-mark mark"></span><span class="mark">Есть</span>
                       <span class="bluetooth-input-for-outline"></span>
                     </label>
@@ -212,22 +268,31 @@
 
           <div class="catalog-right-column">
             <div class="sort-header">
-              <h3 class="filter-title">сортировка:</h3>
+              <h3 class="filter-title-sort">сортировка:</h3>
               <label class="select-control-title">
                 <select class="select-control">
                   <option value="popular">Дорогие</option>
                   <option value="cheap">Дешёвые</option>
                   <option value="expensive" selected>Популярные</option>
                 </select>
+                <span class="select-control-for-outline"></span>
               </label>
-              <button class="top" type="button">
-                <span class="visually-hidden">по возрастанию</span>
-                <img src="images/button-up.svg" width="11" height="10" alt="прокрутка товаров вверх">
-              </button>
-              <button class="bottom" type="button">
-                <span class="visually-hidden">по убыванию</span>
-                <img src="images/button-bottom.svg" width="11" height="10" alt="прокрутка товаров вниз">
-              </button>
+              <div class="button-sort-container">
+                <button class="top-bottom top" type="button">
+                  <svg class="polygon-top-bottom" aria-hidden="true" focusable="false" width="10px" height="10px"
+                    viewBox="0 0 10 10">
+                    <polygon points="0,10 5,0 10,10" fill="color" />
+                  </svg>
+                  <span class="visually-hidden">по возрастанию</span>
+                </button>
+                <button class="top-bottom bottom" type="button">
+                  <svg class="polygon-top-bottom" aria-hidden="true" focusable="false" width="10px" height="10px"
+                    viewBox="0 0 10 10">
+                    <polygon points="0,0 10,0 5,10" fill="color" />
+                  </svg>
+                  <span class="visually-hidden">по убыванию</span>
+                </button>
+              </div>
             </div>
             <section class="product-pagination">
               <h3 class="visually-hidden">Список товаров с кнопками пагинации</h3>

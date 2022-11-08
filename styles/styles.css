@@ -85,7 +85,7 @@ body {
   position: relative;
   display: flex;
   width: 1040px;
-  margin: 46px auto 30px;
+  margin: 45px auto 30px;
 }
 
 .search {
@@ -210,7 +210,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 5px;
+  margin: 5px 0;
   padding: 0;
   list-style-type: none;
   flex-wrap: wrap;
@@ -221,8 +221,8 @@ body {
 }
 
 .navigation-item-exit {
-  margin-left: 8px;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
@@ -274,6 +274,7 @@ body {
   background-repeat: no-repeat;
   background-size: 13px 12px;
   background-position: 0 50%;
+  margin-left: 8px;
 }
 
 .navigation-compare-link {
@@ -435,6 +436,8 @@ body {
 
 .navigation-exit-link {
   color: rgba(0, 0, 0, 0.3);
+  padding-left: 18px;
+  padding-right: 27px;
 }
 
 .menu {
@@ -458,7 +461,6 @@ body {
 .menu-item-catalog {
   margin-right: auto;
   position: relative;
-
 }
 
 .menu-item-catalog:focus-within .subcatalog {
@@ -845,6 +847,12 @@ body {
   min-height: 60px;
   display: block;
   letter-spacing: -2%;
+}
+
+.list-product-item-caption-fitness-bracelets {
+  position: relative;
+  left: -3px;
+  width: 164px;
 }
 
 .services {
@@ -1375,7 +1383,7 @@ body {
 
 .link-device-logo-footer {
   display: inline-block;
-  margin: 62px auto 35px;
+  margin: 62px auto 30px;
 }
 
 .link-device-logo-footer:hover {
@@ -1396,12 +1404,12 @@ body {
 }
 
 .footer-column {
-  margin: 0 183px 0 auto;
+  margin: 0 auto 0 104px;
 }
 
 .logo-html-academy {
   display: block;
-  margin: 0 0 65px auto;
+  margin: 0 0 65px 60px;
 }
 
 .footer-content-address {
@@ -1423,7 +1431,7 @@ body {
 .services-page-footer {
   display: flex;
   justify-content: space-between;
-  width: 444px;
+  width: 470px;
   margin: 0;
   margin-bottom: 62px;
   padding: 0;
@@ -1433,7 +1441,7 @@ body {
 
 .services-page-footer-item-link {
   text-decoration: none;
-  padding: 4px;
+  padding: 16px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1509,7 +1517,7 @@ body {
 
 .contacts-phone-footer {
   display: block;
-  margin-bottom: 63px;
+  margin-bottom: 69px;
   color: #FFFFFF;
 }
 
@@ -1560,7 +1568,7 @@ body {
   font-size: 50px;
   line-height: 50px;
   margin-top: 35px;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
 }
 
 .breadcrumbs {
@@ -1571,7 +1579,7 @@ body {
   margin: 0;
   list-style-type: none;
   flex-wrap: wrap;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -1622,7 +1630,7 @@ body {
 
 .filter-title {
   display: inline-block;
-  margin: 25px 166px 60px 60px;
+  margin: 25px 166px 58px 60px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1634,7 +1642,7 @@ body {
 
 .filter-title-sort {
   display: inline-block;
-  margin: 25px 197px 25px 40px;
+  margin: 25px 199px 25px 40px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1660,7 +1668,7 @@ body {
 }
 
 .catalog-filter-group:first-child {
-  padding-top: 62px;
+  padding-top: 60px;
 }
 
 .catalog-filter-title {
@@ -1816,6 +1824,10 @@ body {
   cursor: pointer;
 }
 
+.control-last {
+  margin-bottom: 31px;
+}
+
 .control-input-for-outline {
   position: absolute;
   width: 20px;
@@ -1837,6 +1849,17 @@ body {
   opacity: 0.1;
 }
 
+.control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(204, 204, 204, 1);
+  border-radius: 3px;
+}
+
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 3px;
@@ -1848,16 +1871,11 @@ body {
   content: "";
 }
 
-.control-mark {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
+.control-input[type="checkbox"]:checked + .control-mark {
   border: 2px solid rgba(0, 0, 0, 1);
-  border-radius: 3px;
 }
+
+
 
 .control-input:focus-visible ~ .control-input-for-outline {
   outline: 2px solid rgba(175, 79, 255, 1);
@@ -1881,7 +1899,7 @@ body {
   left: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid rgba(204, 204, 204, 1);
   border-radius: 50%;
 }
 
@@ -1894,6 +1912,10 @@ body {
   height: 8px;
   background-color: rgba(0, 0, 0, 1);
   border-radius: 50%;
+}
+
+.control-input-bluetooth[type="radio"]:checked + .bluetooth-mark {
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .control-radio:hover .mark {
@@ -1925,7 +1947,7 @@ body {
 .button-control {
   width: 220px;
   height: 40px;
-  margin: 45px auto;
+  margin: 35px auto;
   padding: 10px 23px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -2032,22 +2054,6 @@ body {
   z-index: 1;
 }
 
-/*
-.top {
-  background-image: url("../images/sort.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 11px 10px;
-}
-
-.bottom {
-  background-image: url("../images/sort.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 11px 10px;
-  transform: rotate(-180deg)
-} */
-
 .polygon-top-bottom {
   fill: rgba(0, 0, 0, 0.2);
 }
@@ -2062,7 +2068,7 @@ body {
   grid-template-columns: 360px 360px;
   gap: 44px 40px;
   list-style-type: none;
-  margin: 90px 40px 50px;
+  margin: 71px 40px 42px;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -2126,7 +2132,7 @@ body {
 }
 
 .product-card-image {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .product-card-container {
@@ -2139,6 +2145,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.02em;
   margin: 0;
   margin-right: auto;
   max-width: 226px;
@@ -2239,7 +2246,7 @@ body {
   align-items: center;
   width: 128px;
   height: 71px;
-  margin-right: auto;
+  margin-right: 147px;
 }
 
 .pagination-item-next {

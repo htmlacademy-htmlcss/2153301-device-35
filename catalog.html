@@ -10,7 +10,7 @@
 
 
   <body>
-    <header class="page-header">
+    <header class="page-header-catalog">
       <h2 class="visually-hidden">Интернет-магазин "Девайс"</h2>
       <a class="device-logo style-1" href="index.html"><img src="images/device-logo.svg" width="145" height="36"
           alt="логотип девайс"></a>
@@ -29,23 +29,70 @@
           <ul class="navigation-list-catalog">
             <li class="navigation-item">
               <a class="navigation-link navigation-link-user style-1" href="#">Коля Петухов</a>
+              <span class="visually-hidden">открыть личный кабинет</span>
             </li>
             <li class="navigation-item navigation-item-exit">
               <a class="navigation-link navigation-exit-link style-1" href="#">Выйти</a>
+              <span class="visually-hidden">выход из аккаунта</span>
             </li>
             <li class="navigation-item navigation-item-compare">
               <a class="navigation-link navigation-compare-link style-1" href="#">Сравнить</a>
+              <span class="visually-hidden">сравнить товары</span>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item  navigation-item-basket">
               <a class="navigation-link navigation-basket-link style-1" href="#">Корзина</a>
+              <span class="visually-hidden">содержание корзины</span>
+              <span class="basket-amount">2</span>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="popover-title visually-hidden">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <a class="cart-item-container style-1" href="#">
+                        <img class="cart-item-image" src="images/amateur-selfie-stick.jpg" width="39" height="43"
+                          alt="Любительская селфи-палка">
+                        <span class="cart-item-title">Любительская селфи-палка</span>
+                      </a>
+                      <button type="button" class="cart-item-button style-1"></button>
+                    </li>
+                    <li class="cart-item">
+                      <a class="cart-item-container  style-1" href="#">
+                        <img class="cart-item-image" src="images/professional-selfie-stick.jpg" width="39" height="43"
+                          alt="Профессиональная
+                      селфи-палка">
+                        <span class="cart-item-title">Профессиональная
+                          селфи-палка</span>
+                      </a>
+                      <button type="button" class="cart-item-button style-1"></button>
+                    </li>
+                  </ul>
+                  <div class="cart-price-box-container">
+                    <div class="cart-price-box">
+                      <div class="cart-price-subbox">Товаров:
+                        <span class="cart-price-subbox-value">2</span>
+                      </div>
+                      <div class="cart-price-subbox">Сумма:
+                        <span class="cart-price-subbox-value">2000 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popover-open-basket">
+                    <button class="popover-open-basket-button" type="button">открыть корзину</button>
+                  </div>
+                </div>
+              </div>
+              <svg class="polygon-for-popover" aria-hidden="true" focusable="false" width="14px" height="6px"
+                viewBox="0 0 14 6">
+                <polygon points="0,6 7,0 14,6" fill="color" />
+              </svg>
             </li>
           </ul>
         </nav>
       </div>
       <ul class="menu-list">
         <li class="menu-item menu-item-catalog">
-          <a class="menu-item-link menu-item-catalog-link style-6 " href="#">
-            <h2 class="menu-title">Каталог товаров</h2>
+          <button class="menu-item-link menu-item-catalog-link style-6 ">
+            <span class="menu-title">Каталог товаров</span>
             <svg class="circle circle-plus" aria-hidden="true" focusable="false" width="50" height="50"
               viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" />
@@ -65,8 +112,20 @@
                 <path d="M33 24.79H17v2h16v-2Z" fill="#000" />
               </g>
             </svg>
+            <span class="visually-hidden">открыть категории товаров</span>
+          </button>
+          <ul class="subcatalog">
 
-          </a>
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Виртуальная реальность</a></li>
+
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Фитнес-браслеты</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Квадрокоптеры</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="catalog.html">Моноподы для селфи</a></li>
+
+            <li class="subcatalog-item subcatalog-item-watch"><a class="subcatalog-item-link style-1" href="#">Умные часы</a></li>
+            <li class="subcatalog-item"><a class="subcatalog-item-link style-1" href="#">Экшн-камеры</a></li>
+          </ul>
+
         </li>
         <li class="menu-item menu-item-delivery">
           <a class="menu-item-link style-1" href="#">
@@ -92,10 +151,12 @@
           <h1 class="inner-header-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link  style-1 " href="index.html">Главная</a>
+              <a class="breadcrumbs-link  style-1" href="index.html">Главная</a>
+              <span class="visually-hidden">на главную страницу</span>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link  style-1 " href="#">Каталог товаров</a>
+              <a class="breadcrumbs-link  style-1" href="#">Каталог товаров</a>
+              <span class="visually-hidden">на страницу каталога</span>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Моноподы для селфи</a>
@@ -110,6 +171,7 @@
           <section class="filter-block">
             <h3 class="filter-title">фильтр:</h3>
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+              <span class="visually-hidden">форма фильтрации товаров</span>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
 
@@ -134,10 +196,12 @@
 
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
+                      <span class="visually-hidden">поле введения минимальной цены</span>
                       от<input class="range-input" type="number" value="0" name="min-price">
                       <span class="range-input-for-outline"></span>
                     </label>
                     <label class="catalog-filter-label">
+                      <span class="visually-hidden">пле введения максимальной цены</span>
                       до<input class="range-input" type="number" value="5000" name="max-price">
                       <span class="range-input-for-outline"></span>
                     </label>
@@ -178,7 +242,7 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control control-last">
                       <input type="checkbox" class="control-input visually-hidden" name="pink">
                       <span class="control-mark mark"></span><span class="mark">Розовый</span>
                       <span class="control-input-for-outline"></span>
@@ -223,14 +287,16 @@
               </label>
               <div class="button-sort-container">
                 <button class="top-bottom top" type="button">
-                  <svg class="polygon-top-bottom"  aria-hidden="true" focusable="false" width="10px" height="10px" viewBox="0 0 10 10">
-                    <polygon points="0,10 5,0 10,10" fill="color"/>
+                  <svg class="polygon-top-bottom" aria-hidden="true" focusable="false" width="10px" height="10px"
+                    viewBox="0 0 10 10">
+                    <polygon points="0,10 5,0 10,10" fill="color" />
                   </svg>
                   <span class="visually-hidden">по возрастанию</span>
                 </button>
                 <button class="top-bottom bottom" type="button">
-                  <svg class="polygon-top-bottom"  aria-hidden="true" focusable="false" width="10px" height="10px" viewBox="0 0 10 10">
-                    <polygon points="0,0 10,0 5,10" fill="color"/>
+                  <svg class="polygon-top-bottom" aria-hidden="true" focusable="false" width="10px" height="10px"
+                    viewBox="0 0 10 10">
+                    <polygon points="0,0 10,0 5,10" fill="color" />
                   </svg>
                   <span class="visually-hidden">по убыванию</span>
                 </button>

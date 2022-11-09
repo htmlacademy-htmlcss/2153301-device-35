@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon-32x32.png">
   </head>
 
 
@@ -18,7 +19,7 @@
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="search-input">поле поиска</label>
           <div class="form-input-container">
-            <input type="search" class="search-input" name="search-input" id="search-input" required
+            <input class="search-input" type="search" name="search-input" id="search-input" min="1" required
               placeholder="Поиск по сайту">
             <div class="for-outline-input"></div>
           </div>
@@ -494,7 +495,7 @@
       </div>
     </footer>
     <div class="modal-container modal-container-close ">
-      <form class="modal-subcontainer" action="https://echo.htmlacademy.ru/" method="post" >
+      <form class="modal-subcontainer" action="https://echo.htmlacademy.ru/" method="post">
 
         <div class="modal modal-order">
           <h2 class="modal-title">Доставка под заказ</h2>
@@ -503,8 +504,8 @@
           </button>
           <label class="your-name label-modal-style">
             <span class="visually-hidden">поле ввода вашего имени</span><span class="modal-title-input">Ваше имя:</span>
-            <input class="input-modal-style input-modal-style-name" type="text" id="input-modal-style-name" required min="1"
-              placeholder="Введите имя">
+            <input class="input-modal-style input-modal-style-name" type="text" id="input-modal-style-name" required
+              min="1" placeholder="Введите имя">
 
           </label>
 
@@ -513,12 +514,13 @@
               e-mail:</span>
             <input class="input-modal-style input-modal-style-email" type="email" id="input-modal-style-email" required
               placeholder="Введите e-mail">
-              <div class="place-for-error"><span class="error-text">Забавный у вас адрес</span></div>
+            <span class="error-text">Забавный у вас адрес</span>
           </label>
 
           <label class="your-order label-modal-style"><span class="visually-hidden">введите наименование товара для
               заказа</span><span class="modal-title-input">Что нужно привезти:</span>
-            <input class=" input-modal-style" type="text" id="input-modal-style" required placeholder="В свободной форме">
+            <input class=" input-modal-style" type="text" id="input-modal-style" required
+              placeholder="В свободной форме">
           </label>
 
           <div class="count-label label-modal-style"><span class="modal-title-input for-tooltip-icon">Количество:<span
@@ -547,9 +549,10 @@
                   width="16" height="2" fill="none" viewBox="0 0 16 2">
                   <path fill="#000" d="M16 0H0v2h16V0Z" />
                 </svg><span class="visually-hidden">уменьшение колличества выбранного товара</span></button>
-              <label class="count-input-container" for="count-input" ><span class="visually-hidden">колличество выбранного
-                  товара</span></label><input class="count-input input-modal-style count-style" type="number" min="1" id="count-input"
-                  value="1">
+              <label class="count-input-container" for="count-input"><span class="visually-hidden">колличество
+                  выбранного
+                  товара</span></label><input class="count-input input-modal-style count-style" type="number" min="1"
+                id="count-input" value="1">
               <button class="plus-count button-count count-style" type="button"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
                   <path fill="#000" d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />

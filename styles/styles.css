@@ -389,10 +389,17 @@ body {
   background-size: 10px 10px;
   background-repeat: no-repeat;
   border: none;
+  border: none;
   cursor: pointer;
 }
 
 .cart-price-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  background-color: rgba(26, 26, 26, 1);
  display: flex;
 justify-content: space-between;
 align-items: center;
@@ -404,7 +411,7 @@ align-items: center;
 .cart-price-box {
   display: flex;
   justify-content: space-between;
-width: 100%;
+  width: 100%;
   margin: 0 20px;
   background-color: rgba(26, 26, 26, 1);
 }
@@ -416,6 +423,7 @@ width: 100%;
 .popover-open-basket-button {
   padding: 14px 23px;
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
@@ -446,8 +454,8 @@ width: 100%;
 
 .navigation-exit-link {
   color: rgba(0, 0, 0, 0.3);
-padding-right: 27px;
   padding-left: 18px;
+  padding-right: 27px;
 }
 
 .menu {
@@ -462,19 +470,21 @@ padding-right: 27px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-   width: 1040px;
-margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
 }
 
 .menu-item-catalog {
+ position: relative;
+  margin-right: auto;
  position: relative;
   margin-right: auto;
 }
 
 .subcatalog {
    position: absolute;
+  top: 59px;
+  left: -60px;
+  z-index: 1;
+position: absolute;
   top: 59px;
   left: -60px;
   z-index: 1;
@@ -488,13 +498,22 @@ margin: 0;
 padding: 0 0 51px 60px;
 background-color: rgba(255, 225, 127, 1);
   list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+padding: 0 0 51px 60px;
+background-color: rgba(255, 225, 127, 1);
+  list-style-type: none;
 }
 
 .subcatalog-item-link {
-   font-size: 16px;
+
+  text-decoration: none;
+
+  font-size: 16px;
   line-height: 18px;
 color: rgba(0, 0, 0, 1);
   text-decoration: none;
+
 }
 
 .subcatalog-item-watch {
@@ -519,12 +538,11 @@ color: rgba(0, 0, 0, 1);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
-font-weight: 800;
-letter-spacing: 0.2em;
-  color: #000000;
+color: #000000;
   background-color: #FFE17F;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
 
 }
 
@@ -551,6 +569,8 @@ letter-spacing: 0.2em;
   left: auto;
   margin: auto 0;
   opacity: 0.3;
+
+
 }
 
 .style-6:hover .circle {
@@ -572,9 +592,9 @@ letter-spacing: 0.2em;
 
 .menu-title {
   display: block;
+ margin: 0;
+font-size: 18px;
   font-weight: 800;
-  font-size: 18px;
-  margin: 0;
 }
 
 .submenu-list {
@@ -589,27 +609,27 @@ letter-spacing: 0.2em;
 }
 
 .slider-button-container {
+position: absolute;
+ top: 61px;
+ left: 30px;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 530px;
-  position: absolute;
-  left: 30px;
-  top: 61px;
-  z-index: 1;
 }
 
 .slider-button {
   width: 20px;
   height: 60px;
+margin: 0;
   padding: 10px;
-  margin: 0;
-  border: none;
   background: inherit;
-  cursor: pointer;
   background-image: url("../images/slider-control-prev.svg");
   background-repeat: no-repeat;
   background-size: 20px 60px;
   background-position: center;
+    border: none;
+cursor: pointer;
 }
 
 
@@ -623,8 +643,8 @@ letter-spacing: 0.2em;
   width: 1160px;
   margin: 0 auto;
   padding: 0;
+background: inherit;
   list-style-type: none;
-  background: inherit;
 }
 
 .slider-item:nth-child(3),
@@ -706,11 +726,11 @@ letter-spacing: 0.2em;
 
 }
 
-.style-3:hover:not(.button-services-current) {
+.style-3:hover:not(.button-services-current):not(:disabled) {
   background: rgba(255, 225, 127, 1);
 }
 
-.style-3:active:not(.button-services-current) {
+.style-3:active:not(.button-services-current):not(:disabled) {
   background: rgba(255, 204, 51, 1);
 
 }
@@ -720,6 +740,9 @@ letter-spacing: 0.2em;
   outline-offset: -2px;
 }
 
+.style-3:disabled {
+  opacity: 0.3;
+}
 
 .detail-list {
   display: flex;
@@ -850,7 +873,6 @@ letter-spacing: 0.2em;
   width: 160px;
   min-height: 60px;
   display: block;
-  letter-spacing: -2%;
 }
 
 .list-product-item-caption-fitness-bracelets {
@@ -1768,11 +1790,11 @@ letter-spacing: 0.2em;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-right: 10px;
+  margin: 0;
 }
 
 .range-input {
-  width: 74px;
+  width: 80px;
   border: none;
   background: transparent;
   padding: 0;
@@ -2447,7 +2469,7 @@ letter-spacing: 0.2em;
 
 .modal-close-button:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
-  outline-offset: 2xz;
+  outline-offset: 2px;
 }
 
 .label-modal-style {
@@ -2497,9 +2519,7 @@ letter-spacing: 0.2em;
   opacity: 0.3;
 }
 
-.input-modal-style:invalid + .error-text {
-  border: 2px solid rgba(255, 61, 61, 1);
-}
+
 
 
 .input-modal-style-name {
@@ -2522,21 +2542,24 @@ letter-spacing: 0.2em;
   background-position: 93% 50%;
 }
 
-.input-modal-style-email:invalid + .error-text {
-  display: block;
-}
-
-.place-for-error {
-  height: 20px;
-}
-
 .error-text {
+  height: 20px;
+  display: block;
+  visibility: hidden;
   font-family: "Rubik", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: rgba(255, 61, 61, 1);
   background-color: rgba(255, 255, 255, 1);
+}
+
+.input-modal-style-email:invalid:not(:placeholder-shown) + .error-text {
+  visibility: visible;
+}
+
+.input-modal-style-email:invalid:not(:placeholder-shown) {
+  border: 2px solid rgba(255, 61, 61, 1);
 }
 
 .your-order {
@@ -2553,6 +2576,7 @@ letter-spacing: 0.2em;
   position: absolute;
   margin-left: 8px;
   margin-top: -2px;
+  z-index: 2;
 }
 
 .tooltip-toggle {

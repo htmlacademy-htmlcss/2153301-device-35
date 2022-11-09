@@ -2185,7 +2185,7 @@ body {
 }
 
 .new {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 56px;
@@ -2509,7 +2509,7 @@ body {
   opacity: 0.3;
 }
 
-.input-modal-style:invalid {
+.input-modal-style:invalid + .error-text {
   border: 2px solid rgba(255, 61, 61, 1);
 }
 
@@ -2521,9 +2521,7 @@ body {
   background-position: 93% 50%;
 }
 
-.place-for-error {
-  height: 20px;
-}
+
 
 .your-email {
   grid-column: 2/4;
@@ -2534,6 +2532,23 @@ body {
   background-repeat: no-repeat;
   background-size: 15px 12px;
   background-position: 93% 50%;
+}
+
+.input-modal-style-email:invalid + .error-text {
+  display: block;
+}
+
+.place-for-error {
+  height: 20px;
+}
+
+.error-text {
+  font-family: "Rubik",sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 61, 61, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .your-order {

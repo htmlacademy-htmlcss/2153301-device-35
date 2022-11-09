@@ -376,40 +376,37 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  font-style: normal;
 }
 
 .cart-item-button {
   width: 10px;
   height: 10px;
-  padding: 0;
   margin: 0 0 0 auto;
-  border: none;
-  background-image: url("../images/cart-item-button.svg");
+  padding: 0;
   background-color: rgba(0, 0, 0, 1);
+  background-image: url("../images/cart-item-button.svg");
   background-position: 50%;
   background-size: 10px 10px;
   background-repeat: no-repeat;
+  border: none;
   cursor: pointer;
 }
 
 .cart-price-box-container {
+ display: flex;
+justify-content: space-between;
+align-items: center;
   width: 100%;
+    min-height: 44px;
   background-color: rgba(26, 26, 26, 1);
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .cart-price-box {
-  margin: 0 20px;
   display: flex;
   justify-content: space-between;
+width: 100%;
+  margin: 0 20px;
   background-color: rgba(26, 26, 26, 1);
-  width: 100%;
-
-
 }
 
 .popover-open-basket {
@@ -419,14 +416,12 @@ body {
 .popover-open-basket-button {
   padding: 14px 23px;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
   letter-spacing: 0.2em;
+ cursor: pointer;
   text-transform: uppercase;
-  border: none;
-  cursor: pointer;
 }
 
 .popover-open-basket-button:hover {
@@ -451,8 +446,8 @@ body {
 
 .navigation-exit-link {
   color: rgba(0, 0, 0, 0.3);
+padding-right: 27px;
   padding-left: 18px;
-  padding-right: 27px;
 }
 
 .menu {
@@ -465,42 +460,41 @@ body {
 
 .menu-list {
   display: flex;
-  padding: 0;
-  margin: 0 auto;
-  width: 1040px;
-  list-style-type: none;
   flex-wrap: wrap;
   align-items: center;
+   width: 1040px;
+margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
 }
 
 .menu-item-catalog {
+ position: relative;
   margin-right: auto;
-  position: relative;
 }
 
 .subcatalog {
+   position: absolute;
+  top: 59px;
+  left: -60px;
+  z-index: 1;
   display: none;
+ box-sizing: border-box;
   column-gap: 28px;
   row-gap: 6px;
   grid-template-columns: 224px 184px 180px;
   width: 1160px;
-  box-sizing: border-box;
-  position: absolute;
-  top: 59px;
-  left: -60px;
-  z-index: 1;
+margin: 0;
+padding: 0 0 51px 60px;
+background-color: rgba(255, 225, 127, 1);
   list-style-type: none;
-  padding: 0 0 51px 60px;
-  margin: 0;
-  background-color: rgba(255, 225, 127, 1);
-
 }
 
 .subcatalog-item-link {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 1);
-  font-size: 16px;
+   font-size: 16px;
   line-height: 18px;
+color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }
 
 .subcatalog-item-watch {
@@ -523,15 +517,15 @@ body {
   display: block;
   padding: 10px;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+font-weight: 800;
+letter-spacing: 0.2em;
   color: #000000;
   background-color: #FFE17F;
+  text-decoration: none;
+  text-transform: uppercase;
+
 }
 
 .menu-item-catalog-link {
@@ -551,18 +545,13 @@ body {
 
 .circle {
   position: absolute;
+   top: 0;
   right: 0;
+ bottom: 0;
   left: auto;
-  top: 0;
-  bottom: 0;
   margin: auto 0;
   opacity: 0.3;
 }
-
-/*
-.circle-minus {
-  display: none;
-}*/
 
 .style-6:hover .circle {
   opacity: 1;
@@ -572,8 +561,6 @@ body {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
-
-
 
 .style-6:active .circle {
   opacity: 1;
@@ -2392,10 +2379,11 @@ body {
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
 }
-/*
+
+
 .modal-container-close {
   display: none;
-}*/
+}
 
 
 .modal-subcontainer {
@@ -2543,7 +2531,7 @@ body {
 }
 
 .error-text {
-  font-family: "Rubik",sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;

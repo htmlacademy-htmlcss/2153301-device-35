@@ -19,7 +19,7 @@
         <form class="search" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="search-input">поле поиска</label>
           <div class="form-input-container">
-            <input type="search" class="search-input" name="search-input" id="search-input"
+            <input type="search" class="search-input" name="search-input" id="search-input" required
               placeholder="Поиск по сайту">
             <div class="for-outline-input"></div>
           </div>
@@ -55,7 +55,8 @@
                           alt="Любительская селфи-палка">
                         <span class="cart-item-title">Любительская селфи-палка</span>
                       </a>
-                      <button type="button" class="cart-item-button style-1"><span class="visually-hidden">удалить товар из корзины</span></button>
+                      <button type="button" class="cart-item-button style-1"><span class="visually-hidden">удалить товар
+                          из корзины</span></button>
                     </li>
                     <li class="cart-item">
                       <a class="cart-item-container  style-1" href="#">
@@ -66,7 +67,8 @@
                         <span class="cart-item-title">Профессиональная
                           селфи-палка</span>
                       </a>
-                      <button type="button" class="cart-item-button style-1"><span class="visually-hidden">удалить товар из корзины</span></button>
+                      <button type="button" class="cart-item-button style-1"><span class="visually-hidden">удалить товар
+                          из корзины</span></button>
                     </li>
                   </ul>
                   <div class="cart-price-box-container">
@@ -384,7 +386,8 @@
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
             <p class="contacts-address-tel-time">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="contacts-phone" href="tel:+78128121212"><span class="visually-hidden">телефон для связи с нашим магазином</span>+7 (812) 812-12-12</a>
+            <a class="contacts-phone" href="tel:+78128121212"><span class="visually-hidden">телефон для связи с нашим
+                магазином</span>+7 (812) 812-12-12</a>
           </address>
           <h3 class="contacts-subtitle">Время работы</h3>
           <ul class="contacts-schedule">
@@ -417,8 +420,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
-        <a class="link-device-logo-footer" href="http://127.0.0.1:5500/index.html#"> <span class="visually-hidden">на главную страницу сайта</span><img class="device-logo-footer"
-            src="images/device-logo-footer.svg" width="145" height="36" alt="логотип Девайс"></a>
+        <a class="link-device-logo-footer" href="http://127.0.0.1:5500/index.html#"> <span class="visually-hidden">на
+            главную страницу сайта</span><img class="device-logo-footer" src="images/device-logo-footer.svg" width="145"
+            height="36" alt="логотип Девайс"></a>
         <div class="inner-page-footer-container">
           <p class="footer-content-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 
@@ -491,7 +495,7 @@
       </div>
     </footer>
     <div class="modal-container modal-container-close ">
-      <form class="modal-subcontainer" method="post">
+      <form class="modal-subcontainer" action="https://echo.htmlacademy.ru/" method="post">
 
         <div class="modal modal-order">
           <h2 class="modal-title">Доставка под заказ</h2>
@@ -500,17 +504,23 @@
           </button>
           <label class="your-name label-modal-style">
             <span class="visually-hidden">поле ввода вашего имени</span><span class="modal-title-input">Ваше имя:</span>
-            <input class="input-modal-style input-modal-style-name" type="text" placeholder="Введите имя">
-            <span class="place-for-error"></span>
+            <input class="input-modal-style input-modal-style-name" type="text" id="input-modal-style-name" required
+              min="1" placeholder="Введите имя">
+
           </label>
 
           <label class="your-email label-modal-style">
-            <span class="visually-hidden">поле ввода вашего емэйла</span><span class="modal-title-input">Ваш e-mail:</span>
-            <input class="input-modal-style input-modal-style-email" type="email" placeholder="Введите e-mail">
+            <span class="visually-hidden">поле ввода вашего емэйла</span><span class="modal-title-input">Ваш
+              e-mail:</span>
+            <input class="input-modal-style input-modal-style-email" type="email" id="input-modal-style-email" required
+              placeholder="Введите e-mail">
+            <span class="error-text">Забавный у вас адрес</span>
           </label>
 
-          <label class="your-order label-modal-style"><span class="visually-hidden">введите наименование товара для заказа</span><span class="modal-title-input">Что нужно привезти:</span>
-            <input class=" input-modal-style" type="text" placeholder="В свободной форме">
+          <label class="your-order label-modal-style"><span class="visually-hidden">введите наименование товара для
+              заказа</span><span class="modal-title-input">Что нужно привезти:</span>
+            <input class=" input-modal-style" type="text" id="input-modal-style" required
+              placeholder="В свободной форме">
           </label>
 
           <div class="count-label label-modal-style"><span class="modal-title-input for-tooltip-icon">Количество:<span
@@ -539,7 +549,10 @@
                   width="16" height="2" fill="none" viewBox="0 0 16 2">
                   <path fill="#000" d="M16 0H0v2h16V0Z" />
                 </svg><span class="visually-hidden">уменьшение колличества выбранного товара</span></button>
-              <label class="count-input-container"><span class="visually-hidden">колличество выбранного товара</span><input class="count-input input-modal-style count-style" type="number" placeholder="1"></label>
+              <label class="count-input-container" for="count-input"><span class="visually-hidden">колличество
+                  выбранного
+                  товара</span></label><input class="count-input input-modal-style count-style" type="number" min="1"
+                id="count-input" value="1">
               <button class="plus-count button-count count-style" type="button"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
                   <path fill="#000" d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />

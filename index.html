@@ -49,21 +49,23 @@
                   <ul class="cart-items-list">
                     <li class="cart-item">
                       <a class="cart-item-container style-1" href="#">
+                        <span class="visually-hidden">подробнее о товаре</span>
                         <img class="cart-item-image" src="images/amateur-selfie-stick.jpg" width="39" height="43"
                           alt="Любительская селфи-палка">
                         <span class="cart-item-title">Любительская селфи-палка</span>
                       </a>
-                      <button type="button" class="cart-item-button style-1"></button>
+                      <button type="button" class="cart-item-button style-1"><span class="visually-hidden">удалить товар из корзины</span></button>
                     </li>
                     <li class="cart-item">
                       <a class="cart-item-container  style-1" href="#">
+                        <span class="visually-hidden">подробнее о товаре</span>
                         <img class="cart-item-image" src="images/professional-selfie-stick.jpg" width="39" height="43"
                           alt="Профессиональная
                       селфи-палка">
                         <span class="cart-item-title">Профессиональная
                           селфи-палка</span>
                       </a>
-                      <button type="button" class="cart-item-button style-1"></button>
+                      <button type="button" class="cart-item-button style-1"><span class="visually-hidden">удалить товар из корзины</span></button>
                     </li>
                   </ul>
                   <div class="cart-price-box-container">
@@ -493,17 +495,20 @@
         <div class="modal modal-order">
           <h2 class="modal-title">Доставка под заказ</h2>
           <button class="modal-close-button" type="button">
-            <span class="visually-hidden">Закрыть</span>
+            <span class="visually-hidden">закрытие окна заказа товаров</span>
           </button>
-          <label class="your-name label-modal-style"><span class="modal-title-input">Ваше имя:</span>
+          <label class="your-name label-modal-style">
+            <span class="visually-hidden">поле ввода вашего имени</span><span class="modal-title-input">Ваше имя:</span>
             <input class="input-modal-style input-modal-style-name" type="text" placeholder="Введите имя">
+            <span class="place-for-error"></span>
           </label>
 
-          <label class="your-email label-modal-style"><span class="modal-title-input">Ваш e-mail:</span>
+          <label class="your-email label-modal-style">
+            <span class="visually-hidden">поле ввода вашего емэйла</span><span class="modal-title-input">Ваш e-mail:</span>
             <input class="input-modal-style input-modal-style-email" type="email" placeholder="Введите e-mail">
           </label>
 
-          <label class="your-order label-modal-style"><span class="modal-title-input">Что нужно привезти:</span>
+          <label class="your-order label-modal-style"><span class="visually-hidden">введите наименование товара для заказа</span><span class="modal-title-input">Что нужно привезти:</span>
             <input class=" input-modal-style" type="text" placeholder="В свободной форме">
           </label>
 
@@ -532,12 +537,12 @@
               <button class="minus-count button-count count-style" type="button"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="2" fill="none" viewBox="0 0 16 2">
                   <path fill="#000" d="M16 0H0v2h16V0Z" />
-                </svg></button>
-              <input class="count-input input-modal-style count-style" type="number">
+                </svg><span class="visually-hidden">уменьшение колличества выбранного товара</span></button>
+              <label class="count-input-container"><span class="visually-hidden">колличество выбранного товара</span><input class="count-input input-modal-style count-style" type="number" placeholder="1"></label>
               <button class="plus-count button-count count-style" type="button"><svg xmlns="http://www.w3.org/2000/svg"
                   width="16" height="16" fill="none" viewBox="0 0 16 16">
                   <path fill="#000" d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
-                </svg></button>
+                </svg><span class="visually-hidden">увеличение колличества выбранного товара</span></button>
             </div>
           </div>
 

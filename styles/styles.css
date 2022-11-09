@@ -376,40 +376,37 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  font-style: normal;
 }
 
 .cart-item-button {
   width: 10px;
   height: 10px;
-  padding: 0;
   margin: 0 0 0 auto;
-  border: none;
+  padding: 0;
   background-image: url("../images/cart-item-button.svg");
   background-color: rgba(0, 0, 0, 1);
   background-position: 50%;
   background-size: 10px 10px;
   background-repeat: no-repeat;
+  border: none;
   cursor: pointer;
 }
 
 .cart-price-box-container {
-  width: 100%;
-  background-color: rgba(26, 26, 26, 1);
-  min-height: 44px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  background-color: rgba(26, 26, 26, 1);
 }
 
 .cart-price-box {
-  margin: 0 20px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(26, 26, 26, 1);
   width: 100%;
-
-
+  margin: 0 20px;
+  background-color: rgba(26, 26, 26, 1);
 }
 
 .popover-open-basket {
@@ -419,7 +416,6 @@ body {
 .popover-open-basket-button {
   padding: 14px 23px;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
@@ -450,9 +446,10 @@ body {
 
 
 .navigation-exit-link {
-  color: rgba(0, 0, 0, 0.3);
-  padding-left: 18px;
   padding-right: 27px;
+  padding-left: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: inherit;
 }
 
 .menu {
@@ -465,42 +462,43 @@ body {
 
 .menu-list {
   display: flex;
-  padding: 0;
-  margin: 0 auto;
-  width: 1040px;
-  list-style-type: none;
-  flex-wrap: wrap;
   align-items: center;
+  width: 1040px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
 }
 
 .menu-item-catalog {
+ position: relative;
   margin-right: auto;
-  position: relative;
 }
 
 .subcatalog {
+position: absolute;
+  top: 59px;
+  left: -60px;
+  z-index: 1;
   display: none;
   column-gap: 28px;
   row-gap: 6px;
   grid-template-columns: 224px 184px 180px;
   width: 1160px;
   box-sizing: border-box;
-  position: absolute;
-  top: 59px;
-  left: -60px;
-  z-index: 1;
-  list-style-type: none;
-  padding: 0 0 51px 60px;
   margin: 0;
-  background-color: rgba(255, 225, 127, 1);
-
+padding: 0 0 51px 60px;
+background-color: rgba(255, 225, 127, 1);
+  list-style-type: none;
 }
 
 .subcatalog-item-link {
+
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+
   font-size: 16px;
   line-height: 18px;
+ color: rgba(0, 0, 0, 1);
 }
 
 .subcatalog-item-watch {
@@ -733,7 +731,7 @@ body {
   outline-offset: -2px;
 }
 
-.style-3:disabled{
+.style-3:disabled {
   opacity: 0.3;
 }
 
@@ -866,7 +864,7 @@ body {
   width: 160px;
   min-height: 60px;
   display: block;
-  letter-spacing: -2%;
+  letter-spacing: -02em;
 }
 
 .list-product-item-caption-fitness-bracelets {
@@ -2463,7 +2461,7 @@ body {
 
 .modal-close-button:focus-visible {
   outline: 2px solid rgba(175, 79, 255, 1);
-  outline-offset: 2xz;
+  outline-offset: 2px;
 }
 
 .label-modal-style {

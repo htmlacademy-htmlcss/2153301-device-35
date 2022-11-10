@@ -29,6 +29,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-width: 1240px;
   min-height: 100%;
   margin: 0;
   font-family: "Rubik", sans-serif;
@@ -867,6 +868,7 @@ body {
   width: 1160px;
   min-height: 391px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .services-list {
@@ -997,7 +999,6 @@ body {
   margin: 0 auto 70px;
   color: #000000;
   background-color: #F0F0F0;
-
 }
 
 .delivery-link {
@@ -1065,7 +1066,13 @@ body {
   opacity: 0.3;
 }
 
-
+.about-us-contacts-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 70px;
+  width: 1160px;
+  position: relative;
+}
 
 .about-us {
   width: 520px;
@@ -1077,13 +1084,7 @@ body {
   padding-top: 47px;
 }
 
-.about-us-contacts-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto 70px;
-  width: 1160px;
-  position: relative;
-}
+
 
 .about-us-contacts-title {
   margin: 0;
@@ -1248,6 +1249,10 @@ body {
   min-height: 421px;
 }
 
+.newsletter-prime-container {
+  margin: 0 auto;
+}
+
 .newsletter-container {
   width: 1160px;
   min-height: 301px;
@@ -1319,6 +1324,10 @@ body {
 .field:disabled,
 .field:disabled:hover {
   opacity: 0.3;
+}
+
+.field:invalid:not(:placeholder-shown) {
+  border-bottom: 3px solid rgba(255, 61, 61, 1);
 }
 
 .newsletter-button {
@@ -2379,17 +2388,16 @@ body {
 
 .modal-container-close {
   display: none;
-}
-
+ }
 
 .modal-subcontainer {
   display: flex;
   box-sizing: border-box;
+  width: 920px;
   margin: auto;
   padding: 62px 70px;
   background-color: rgba(255, 255, 255, 1);
   border: 10px solid rgba(0, 0, 0, 1);
-  width: 920px;
 }
 
 .modal {
@@ -2398,38 +2406,36 @@ body {
   grid-template-columns: 360px 140px 180px;
   row-gap: 42px;
   column-gap: 40px;
-  background-color: rgba(255, 255, 255, 1);
   margin: 0;
   padding: 0;
+  background-color: rgba(255, 255, 255, 1);
   border: none;
 }
 
 .modal-title {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
   grid-column: 1/3;
   grid-row: 1 / -2;
   padding: 0;
   margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
 }
 
 .modal-close-button {
-  width: 26px;
-  height: 26px;
   justify-self: end;
   align-self: center;
   grid-column: 3;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 1);
   background-image: url("../images/modal-close-button-image.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   border: none;
-  padding: 0;
-  margin: 0;
-
-  background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
 }
 
@@ -2450,9 +2456,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Rubik", sans-serif;
-  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
 }
 
 .modal-title-input {
@@ -2493,17 +2499,12 @@ body {
   opacity: 0.3;
 }
 
-
-
-
 .input-modal-style-name {
   background-image: url("../images/your-name-icon.svg");
   background-repeat: no-repeat;
   background-size: 13px 12px;
   background-position: 93% 50%;
 }
-
-
 
 .your-email {
   grid-column: 2/4;
@@ -2541,16 +2542,16 @@ body {
 }
 
 .for-tooltip-icon {
-  word-wrap: break-word;
   position: relative;
   padding-right: 26px;
+  word-wrap: break-word;
 }
 
 .tooltip {
   position: absolute;
-  margin-left: 8px;
+  z-index: 3;
   margin-top: -2px;
-  z-index: 2;
+  margin-left: 8px;
 }
 
 .tooltip-toggle {
@@ -2600,6 +2601,7 @@ body {
 }
 
 .count-label-box {
+  position: relative;
   display: flex;
 }
 
@@ -2639,10 +2641,24 @@ body {
   cursor: auto;
 }
 
-
 .count-input {
   outline: none;
   text-align: center;
+}
+
+.count-for-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 180px;
+  height: 60px;
+  pointer-events: none;
+}
+
+.count-input:invalid:not(:placeholder-shown) + .count-for-outline {
+  border: 2px solid rgba(255, 61, 61, 1);
+  z-index: 2;
 }
 
 .button-count {

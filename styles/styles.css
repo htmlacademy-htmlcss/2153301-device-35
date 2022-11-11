@@ -593,7 +593,7 @@ body {
   position: relative;
   width: 1160px;
   min-height: 481px;
-  margin: 0 auto ;
+  margin: 0 auto;
 }
 
 .slider-button-container {
@@ -756,11 +756,11 @@ body {
 }
 
 .slider-pagination {
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
-   bottom: 127px;
+  bottom: 127px;
 
   display: flex;
   justify-content: center;
@@ -1033,7 +1033,7 @@ body {
 
 .delivery-link::before {
   content: "";
-position: absolute;
+  position: absolute;
   background: url("../images/delivery-car.svg") no-repeat 50% 50%;
   background-size: 47px 31px;
   width: 125px;
@@ -2264,25 +2264,21 @@ position: absolute;
 }
 
 .pagination-item {
-  display: flex;
+  display: block;
   align-items: center;
-  width: 40px;
-  height: 40px;
+
 }
 
 .pagination-item-prev {
   display: flex;
   align-items: center;
-  width: 128px;
-  height: 71px;
-  margin-right: 147px;
+  margin-right: auto;
+
 }
 
 .pagination-item-next {
   display: flex;
   align-items: center;
-  width: 128px;
-  height: 71px;
   margin-left: auto;
 }
 
@@ -2290,8 +2286,9 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  max-width: 70px;
+  min-height: 40px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2324,8 +2321,7 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 128px;
-  height: 71px;
+  padding: 25px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -2344,8 +2340,7 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 128px;
-  height: 71px;
+  padding: 25px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -2402,9 +2397,9 @@ position: absolute;
 }
 
 
- .modal-container-close {
+.modal-container-close {
   display: none;
- }
+}
 
 .modal-subcontainer {
   display: flex;

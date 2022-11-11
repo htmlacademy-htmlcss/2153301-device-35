@@ -147,9 +147,8 @@ body {
 .search-button {
   display: inline-block;
   width: 160px;
-  height: 40px;
   margin: 0;
-  padding: 0;
+  padding: 8px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -168,7 +167,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 40px;
+  height: 100%;
   pointer-events: none;
 }
 
@@ -569,6 +568,8 @@ body {
 }
 
 .style-6:focus-visible {
+  position: relative;
+  z-index: 2;
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -689,7 +690,6 @@ body {
 .button-1 {
   box-sizing: border-box;
   width: 220px;
-  height: 40px;
   margin: 0;
   margin-bottom: 32px;
   padding: 10px;
@@ -897,9 +897,8 @@ body {
 
 .button-services {
   width: 280px;
-  height: 41px;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -918,7 +917,6 @@ body {
 
 .button-services-current {
   width: 280px;
-  height: 41px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1023,7 +1021,7 @@ body {
 .button-delivery-caption {
   display: block;
   margin: auto;
-  margin-left: 197px;
+  max-width: 900px;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1035,6 +1033,7 @@ body {
 
 .delivery-link::before {
   content: "";
+position: absolute;
   background: url("../images/delivery-car.svg") no-repeat 50% 50%;
   background-size: 47px 31px;
   width: 125px;
@@ -1044,7 +1043,7 @@ body {
 
 .delivery-link::after {
   content: "";
-  position: relative;
+  position: absolute;
   top: 30px;
   right: 42px;
   width: 40px;
@@ -1343,11 +1342,9 @@ body {
 
 .newsletter-button {
   width: 253px;
-  height: 57px;
   padding: 0;
   border: #C4C4C4 solid 3px;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1978,7 +1975,6 @@ body {
 
 .button-control {
   width: 220px;
-  height: 40px;
   margin: 35px auto;
   padding: 10px 23px;
   font-family: "Raleway", sans-serif;
@@ -2406,7 +2402,7 @@ body {
 }
 
 
-.modal-container-close {
+ .modal-container-close {
   display: none;
  }
 
@@ -2485,8 +2481,6 @@ body {
   margin-bottom: 14px;
   letter-spacing: -0.02em;
 }
-
-
 
 .input-modal-style {
   box-sizing: border-box;
@@ -2607,9 +2601,7 @@ body {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
   padding: 19px;
-
 }
-
 
 .container-svg-span-modal {
   display: none;
@@ -2695,10 +2687,9 @@ body {
   position: relative;
   box-sizing: border-box;
   border: none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   width: 200px;
-  height: 40px;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 1);
   background-image: url("../images/bar-popover.svg");

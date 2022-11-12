@@ -816,7 +816,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
-  /* letter-spacing: -2%; */
+   letter-spacing: -0.02em;
 }
 
 .list-product-item-link {
@@ -849,13 +849,6 @@ img {
 .list-product-item-caption {
   display: block;
   width: 160px;
-  min-height: 60px;
-}
-
-.fitness-bracelets {
-  position: relative;
-  left: -3px;
-  width: 164px;
   min-height: 60px;
 }
 
@@ -1430,10 +1423,6 @@ img {
   display: flex;
 }
 
-.footer-column {
-  margin: 0 auto 0 104px;
-}
-
 .footer-content-address {
   align-self: start;
   width: 239px;
@@ -1449,6 +1438,10 @@ img {
   width: 80px;
   height: 7px;
   background: rgba(255, 199, 0, 1);
+}
+
+.footer-column {
+  margin: 3px auto 0 103px;
 }
 
 .services-page-footer {
@@ -2509,7 +2502,7 @@ img {
   background-image: url("../images/your-name-icon.svg");
   background-repeat: no-repeat;
   background-size: 13px 12px;
-  background-position: 94% 50%;
+  background-position: 326px 50%;
 }
 
 .your-email {
@@ -2520,7 +2513,7 @@ img {
   background-image: url("../images/your-email-icon.svg");
   background-repeat: no-repeat;
   background-size: 15px 12px;
-  background-position: 94% 50%;
+  background-position: 325px 50%;
 }
 
 .error-text {

@@ -816,7 +816,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
-   letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 }
 
 .list-product-item-link {
@@ -987,23 +987,23 @@ img {
 
 .services-title {
   width: 452px;
+  margin-bottom: 34px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  margin-bottom: 34px;
+  font-weight: 800;
 }
 
 .services-content {
   width: 452px;
-  color: #444444;
   margin: 0;
+  color: #444444;
 }
 
 .delivery-link-container {
-  display: flex;
   position: relative;
+  display: flex;
   width: 1160px;
   min-height: 100px;
   margin: 0 auto 70px;
@@ -1012,33 +1012,33 @@ img {
 }
 
 .delivery-link {
+  position: relative;
   display: flex;
   flex-grow: 1;
   background-color: rgba(240, 240, 240, 1);
   text-decoration: none;
-  position: relative;
 }
 
 .button-delivery-caption {
   display: block;
-  margin: auto;
   max-width: 900px;
-  color: #000000;
+  margin: auto;
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
   font-size: 20px;
   line-height: 23px;
-  text-transform: uppercase;
+  font-weight: 800;
   letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .delivery-link::before {
   content: "";
   position: absolute;
-  background: url("../images/delivery-car.svg") no-repeat 50% 50%;
-  background-size: 47px 31px;
   width: 125px;
   height: 100px;
+  background: url("../images/delivery-car.svg") no-repeat 50% 50%;
+  background-size: 47px 31px;
   background-color: rgba(255, 225, 127, 1);
 }
 
@@ -1049,8 +1049,8 @@ img {
   right: 42px;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
 }
 
 .attention {
@@ -1078,11 +1078,11 @@ img {
 }
 
 .about-us-contacts-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 60px;
   width: 1160px;
-  position: relative;
+  margin: 0 auto 60px;
 }
 
 .about-us {
@@ -1101,27 +1101,27 @@ img {
   padding: 0;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  font-weight: 800;
 }
 
 .about-us-contacts-title::before {
   content: "";
+  position: absolute;
+  top: 0;
   width: 84px;
   height: 7px;
   background-color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 0;
 }
 
 .about-us-content {
+  width: 100%;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   color: #444444;
   background-color: #ffffff;
-  width: 100%;
 }
 
 .delivery-company {
@@ -1136,9 +1136,9 @@ img {
   display: block;
   font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
 }
 
 .delivery-company-item:not(:last-child) {
@@ -1147,44 +1147,44 @@ img {
 
 .delivery-company-item::before {
   content: "";
-  display: inline-block;
   position: absolute;
   bottom: 6px;
   left: -35px;
-  background: url("../images/yellowball.svg");
-  background-size: 8px 8px;
+  display: inline-block;
   width: 8px;
   height: 8px;
+  background: url("../images/yellowball.svg");
+  background-size: 8px 8px;
 }
 
 .more-about-us {
   display: block;
   box-sizing: border-box;
-  margin-bottom: 10px;
   width: 270px;
   height: 40px;
+  margin-bottom: 10px;
   padding: 10px 21px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
   color: #000000;
   background-color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  cursor: pointer;
   background-image: url("../images/bar-about us.svg");
   background-size: 270px 8px;
   background-repeat: no-repeat;
   background-position: 50%;
+  cursor: pointer;
 }
 
 .contacts-address {
   margin-bottom: 30px;
-  color: #444444;
   font-style: normal;
+  color: #444444;
 }
 
 .contacts-address::after {
@@ -1212,8 +1212,8 @@ img {
 .contacts-subtitle {
   margin: 0;
   margin-bottom: 15px;
-  font-weight: 700;
   font-size: 24px;
+  font-weight: 700;
 }
 
 .contacts-schedule {
@@ -1238,28 +1238,28 @@ img {
   padding: 10px 32px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  color: #000000;
-  background-color: #ffffff;
+  font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
   background-image: url("../images/bar-contacts.svg");
   background-size: 270px 8px;
   background-repeat: no-repeat;
   background-position: 50%;
+  cursor: pointer;
 }
 
 .newsletter {
   display: flex;
   flex-direction: column;
-  background-color: #f0f0f0;
-  color: #000000;
   width: 100%;
   min-height: 421px;
+  color: #000000;
+  background-color: #f0f0f0;
 }
 
 .newsletter-prime-container {
@@ -1277,31 +1277,31 @@ img {
 }
 
 .newsletter-title {
-  width: 348px;
-  margin: 0 252px 144px 0;
-  padding: 0;
-  min-height: 100px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-  color: #000000;
-  background-color: inherit;
   position: relative;
   left: 6px;
+  width: 348px;
+  min-height: 100px;
+  margin: 0 252px 144px 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  color: #000000;
+  background-color: inherit;
 }
 
 .newsletter-title-content {
-  width: 560px;
-  margin: 0;
-  padding: 0;
-  min-height: 90px;
-  color: #444444;
-  background-color: inherit;
   position: relative;
   left: 6px;
   top: 9px;
+  width: 560px;
+  min-height: 90px;
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  background-color: inherit;
 }
 
 .subscribe {
@@ -1313,15 +1313,15 @@ img {
 }
 
 .field {
-  margin: 0;
-  padding: 0 0 0 16px;
   width: 541px;
   height: 54px;
+  margin: 0;
+  padding: 0 0 0 16px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  font-weight: 400;
   color: #000000;
   background-color: #f0f0f0;
   border: none;
@@ -1329,8 +1329,8 @@ img {
 }
 
 .field:focus-visible {
-  outline: none;
   background-color: rgba(220, 220, 220, 1);
+  outline: none;
 }
 
 .field:disabled,
@@ -1345,13 +1345,13 @@ img {
 .newsletter-button {
   width: 253px;
   padding: 0;
-  border: #c4c4c4 solid 3px;
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  border: #c4c4c4 solid 3px;
   cursor: pointer;
 }
 
@@ -1387,13 +1387,13 @@ img {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 36px;
-  background-color: #444444;
-  color: #ffffff;
   font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #444444;
 }
 
 .page-footer-container {
@@ -1424,17 +1424,17 @@ img {
 }
 
 .footer-content-address {
+  position: relative;
   align-self: start;
   width: 239px;
   margin: 0;
-  position: relative;
 }
 
 .footer-content-address::after {
   content: "";
   position: absolute;
-  bottom: -71px;
   left: 0;
+  bottom: -71px;
   width: 80px;
   height: 7px;
   background: rgba(255, 199, 0, 1);
@@ -1455,7 +1455,6 @@ img {
 }
 
 .services-page-footer-item-link {
-  text-decoration: none;
   padding: 16px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -1463,8 +1462,9 @@ img {
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #ffffff;
   letter-spacing: 0.2em;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .services-page-footer-item-link:hover {
@@ -1486,12 +1486,12 @@ img {
 
 .footer-social-list {
   display: flex;
-  width: 150px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 150px;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
-  flex-wrap: wrap;
 }
 
 .button-footer {
@@ -1499,12 +1499,12 @@ img {
 }
 
 .circle-social {
-  display: block;
   position: relative;
+  display: block;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   background-color: #ffffff4d;
+  border-radius: 50%;
 }
 
 .social-icon {
@@ -1538,7 +1538,6 @@ img {
   display: block;
   margin-bottom: 55px;
   padding: 7px 0 7px 14px;
-  padding-right: 0;
   color: #ffffff;
 }
 
@@ -1584,24 +1583,24 @@ img {
 }
 
 .inner-header-title {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
   margin-top: 35px;
   margin-bottom: 9px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
 }
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 429px;
-  padding: 0;
   margin: 0;
-  list-style-type: none;
-  flex-wrap: wrap;
   margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -1616,9 +1615,9 @@ img {
   padding: 15px 0;
   font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
@@ -1628,27 +1627,27 @@ img {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  background-color: #f0f0f0;
   color: #000000;
+  background-color: #f0f0f0;
 }
 
 .filter-sort-pagination-container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
-  background-color: #f0f0f0;
   color: #000000;
+  background-color: #f0f0f0;
 }
 
 .filter-block {
   width: 320px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  background-color: inherit;
+  font-weight: 700;
   color: inherit;
+  background-color: inherit;
 }
 
 .filter-title {

@@ -163,6 +163,8 @@ img {
   border-radius: 0 50px 50px 0;
   outline: none;
   cursor: pointer;
+  transition-duration: 1s, 0.3s;
+  transition-property: color, background-color;
 }
 
 .for-outline-button {
@@ -607,18 +609,18 @@ img {
 .slider-button-container {
   position: absolute;
   top: 61px;
-  left: 30px;
+  left: 10px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  width: 530px;
+  width: 570px;
 }
 
 .slider-button {
   width: 20px;
   height: 60px;
   margin: 0;
-  padding: 10px;
+  padding: 30px;
   background: inherit;
   background-image: url("../images/slider-control-prev.svg");
   background-repeat: no-repeat;
@@ -850,6 +852,7 @@ img {
   display: block;
   width: 160px;
   min-height: 60px;
+  letter-spacing: -0.02em;
 }
 
 .services {
@@ -1353,6 +1356,8 @@ img {
   letter-spacing: 0.2em;
   border: #c4c4c4 solid 3px;
   cursor: pointer;
+  transition-duration: 1s, 0.3s;
+  transition-property: color, background-color;
 }
 
 .style-2:hover {
@@ -2599,6 +2604,7 @@ img {
 .count-label-box {
   position: relative;
   display: flex;
+  transition: 0.5s;
 }
 
 .count-style {

@@ -82,7 +82,7 @@ img {
   opacity: 0.3;
 }
 
-.style-1:focus-visible {
+.style-1:focus-visible:not(.slider-button) {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
 }
@@ -628,10 +628,22 @@ img {
   background-position: center;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .slider-next {
   transform: rotate(180deg);
+}
+
+.slider-button:focus-visible::after {
+  position: absolute;
+  top: -2px;
+  left: 19px;
+  content: "";
+  width: 24px;
+  height: 64px;
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
 }
 
 .slider-list {

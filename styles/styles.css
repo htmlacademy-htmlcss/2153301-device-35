@@ -811,7 +811,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 17px;
+  margin-bottom: 70px;
 }
 
 .list-product {
@@ -870,27 +870,27 @@ img {
 .services {
   width: 100%;
   margin-bottom: 70px;
-  background: #f0f0f0 74%;
+  background: linear-gradient(to top, #f0f0f0 74%, #ffffff 26%);
 }
 
 .services-container {
+  position: relative;
   display: flex;
+  align-items: flex-start;
   width: 1160px;
-  min-height: 391px;
   margin: 0 auto;
   padding: 0;
 }
 
 .services-list {
   width: 280px;
-  height: 191px;
   margin: 0;
   padding: 64px 0;
   list-style-type: none;
   border-right: 7px #000000 solid;
 }
 
-.services-list-item {
+.services-list-item:not(:last-child) {
   margin-bottom: 34px;
 }
 
@@ -962,11 +962,11 @@ img {
 
 .services-container-inner {
   width: 694px;
-  margin: 72px auto 145px 116px;
+  margin: auto auto auto 116px;
 }
 
 .description-list {
-  margin: 0;
+  margin: 72px 0 144px auto;
   padding: 0;
   list-style-type: none;
 }
@@ -1012,7 +1012,7 @@ img {
 }
 
 .services-content {
-  width: 452px;
+  width: 455px;
   margin: 0;
   color: #444444;
 }
@@ -1177,7 +1177,7 @@ img {
   display: block;
   box-sizing: border-box;
   width: 270px;
-  height: 40px;
+  /* height: 40px; */
   margin-bottom: 10px;
   padding: 10px 21px;
   font-family: "Raleway", sans-serif;
@@ -1249,7 +1249,7 @@ img {
   display: block;
   box-sizing: border-box;
   width: 259px;
-  height: 40px;
+  /* height: 40px; */
   margin-bottom: 10px;
   padding: 10px 32px;
   font-family: "Raleway", sans-serif;
@@ -1832,6 +1832,15 @@ img {
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.range-input {
+  -moz-appearance: textfield;
+}
+
+.range-input:hover,
+.range-input:focus {
+  -moz-appearance: number-input;
 }
 
 .range-input:focus-visible + .range-input-for-outline {

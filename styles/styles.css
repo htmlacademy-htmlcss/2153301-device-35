@@ -1836,11 +1836,6 @@ img {
   -moz-appearance: textfield;
 }
 
-.range-input:hover,
-.range-input:focus {
-  -moz-appearance: number-input;
-}
-
 .range-input:focus-visible + .range-input-for-outline {
   outline: 2px solid rgba(175, 79, 255, 1);
   outline-offset: 2px;
